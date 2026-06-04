@@ -5,9 +5,18 @@ import SectionTitle from "../ui/SectionTitle";
 import profile from "../../data/profile.json";
 import social from "../../data/social.json";
 import type { Profile, Social } from "../../types";
+import SectionScene from "../three/SectionScene";
+import type { Shape } from "../three/SectionScene";
 
 const typedProfile = profile as unknown as Profile;
 const typedSocial = social as Social;
+
+const shapes: Shape[] = [
+  { pos: [-2.5, 2.0, 0.5], scale: 0.6, color: "#ea7c00", type: "distort", geometry: "capsule", speed: 1.0 },
+  { pos: [2.8, 1.8, -1], scale: 0.55, color: "#f58f33", type: "wobble", geometry: "tetrahedron", speed: 0.7 },
+  { pos: [-2.0, -2.0, -0.5], scale: 0.6, color: "#fac799", type: "distort", geometry: "cone", speed: 1.6 },
+  { pos: [2.5, -2.2, 0.5], scale: 0.5, color: "#c76a00", type: "wobble", geometry: "cylinder", speed: 1.3 },
+];
 
 const InstagramIcon = () => (
   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -34,7 +43,8 @@ const Contact = () => {
   const { t } = useTranslation();
 
   return (
-    <section id="contacto" className="py-24">
+    <section id="contacto" className="relative overflow-hidden py-24">
+      <SectionScene shapes={shapes} />
       <div className="mx-auto max-w-6xl px-4">
         <SectionTitle title={t("contact.title")} subtitle={t("contact.subtitle")} />
 
