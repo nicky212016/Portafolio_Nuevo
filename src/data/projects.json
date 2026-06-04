@@ -1,53 +1,104 @@
 [
   {
-    "id": "colab-soyfonse",
+    "id": "monster-energy",
     "title": {
-      "en": "Content for @soyfonse (1.5M+ followers)",
-      "es": "Contenido para @soyfonse (1.5M+ seguidores)"
+      "en": "Monster Energy 3D Animation",
+      "es": "Animación 3D Monster Energy"
     },
     "description": {
-      "en": "Edited two multimedia pieces for digital creator @soyfonse (295K Instagram, 1.3M TikTok). One piece reached 172K views and 8.7K likes. Work involved musical timing, motion graphics, color correction, rotoscoping, and visual rhythm across Instagram and TikTok formats.",
-      "es": "Edición de dos piezas multimedia para el creador digital @soyfonse (295K Instagram, 1.3M TikTok). Una pieza alcanzó 172K visualizaciones y 8.7K likes. Trabajo de timing musical, motion graphics, corrección de color, rotoscopia y ritmo visual en formatos para Instagram y TikTok."
+      "en": "3D animation project featuring dynamic visual effects and motion graphics for the Monster Energy brand.",
+      "es": "Proyecto de animación 3D con efectos visuales dinámicos y motion graphics para la marca Monster Energy."
     },
     "thumbnail": "",
     "images": [],
-    "videoUrl": "",
+    "videoUrl": "https://youtu.be/Uqu9ZYnnQw8",
     "modelUrl": "",
-    "tags": ["After Effects", "Adobe Premiere Pro", "Motion Graphics", "Color Correction"],
+    "tags": ["Blender", "After Effects", "3D Animation", "Motion Graphics"],
     "year": 2025
   },
   {
-    "id": "motion-portfolio",
+    "id": "son-heung-min",
+    "title": {
+      "en": "Son Heung Min",
+      "es": "Son Heung Min"
+    },
+    "description": {
+      "en": "Video editing and motion graphics piece featuring football player Son Heung Min, with dynamic transitions and visual effects.",
+      "es": "Pieza de edición de video y motion graphics sobre el futbolista Son Heung Min, con transiciones dinámicas y efectos visuales."
+    },
+    "thumbnail": "",
+    "images": [],
+    "videoUrl": "https://youtu.be/Rsq3UINw63Y",
+    "modelUrl": "",
+    "tags": ["After Effects", "Adobe Premiere Pro", "Video Editing", "Motion Graphics"],
+    "year": 2025
+  },
+  {
+    "id": "parque-farallones",
+    "title": {
+      "en": "Parque Natural Farallones",
+      "es": "Parque Natural Farallones"
+    },
+    "description": {
+      "en": "Audiovisual piece about Farallones Natural Park, combining video editing, color grading, and motion graphics to showcase natural landscapes.",
+      "es": "Pieza audiovisual sobre el Parque Natural Farallones, combinando edición de video, color grading y motion graphics para mostrar paisajes naturales."
+    },
+    "thumbnail": "",
+    "images": [],
+    "videoUrl": "https://youtu.be/jXex-WzdUdE",
+    "modelUrl": "",
+    "tags": ["Adobe Premiere Pro", "Color Grading", "Video Editing", "Motion Graphics"],
+    "year": 2025
+  },
+  {
+    "id": "cm-punk",
+    "title": {
+      "en": "CM Punk — Final",
+      "es": "CM Punk — Final"
+    },
+    "description": {
+      "en": "High-energy video edit featuring wrestler CM Punk, with rhythmic editing, motion graphics, and dramatic visual storytelling.",
+      "es": "Edición de video de alta energía sobre el luchador CM Punk, con edición rítmica, motion graphics y narrativa visual dramática."
+    },
+    "thumbnail": "",
+    "images": [],
+    "videoUrl": "https://youtu.be/erkTwdOdXAg",
+    "modelUrl": "",
+    "tags": ["After Effects", "Adobe Premiere Pro", "Video Editing", "Motion Graphics"],
+    "year": 2025
+  },
+  {
+    "id": "portfolio-reel",
     "title": {
       "en": "Motion Graphics Portfolio",
       "es": "Portafolio de Motion Graphics"
     },
     "description": {
-      "en": "A showcase of motion graphics projects featuring editing, animation, and kinetic typography. Developed as part of the Digital Design Certificate at Vancouver Film School, demonstrating principles of animation, visual composition, and motion design for branding and digital content.",
-      "es": "Muestra de proyectos de motion graphics con edición, animación y tipografía cinética. Desarrollado como parte del Certificado de Diseño Digital en Vancouver Film School, demostrando principios de animación, composición visual y diseño en movimiento para branding y contenido digital."
+      "en": "Motion graphics portfolio reel showcasing animation, kinetic typography, and visual design work developed with After Effects.",
+      "es": "Reel de portafolio de motion graphics mostrando animación, tipografía cinética y diseño visual desarrollado con After Effects."
     },
     "thumbnail": "",
     "images": [],
-    "videoUrl": "",
+    "videoUrl": "https://youtu.be/k68GMoTODfU",
     "modelUrl": "",
     "tags": ["After Effects", "Motion Graphics", "Kinetic Typography", "Animation"],
     "year": 2025
   },
   {
-    "id": "educational-video",
+    "id": "redecorate",
     "title": {
-      "en": "Bilingual Educational Videos",
-      "es": "Videos Educativos Bilingües"
+      "en": "Redecorate",
+      "es": "Redecorate"
     },
     "description": {
-      "en": "Production of bilingual explanatory videos and audiovisual material for learning platforms. Collaboration on visual scripts, sound design, and digital composition for educational content aimed at diverse audiences.",
-      "es": "Producción de videos explicativos bilingües y material audiovisual para plataformas de aprendizaje. Colaboración en guiones visuales, diseño sonoro y composición digital para contenido educativo orientado a diferentes públicos."
+      "en": "Music-driven visual piece with synchronized motion graphics, rhythmic editing, and cinematic color treatment.",
+      "es": "Pieza visual con música sincronizada, motion graphics, edición rítmica y tratamiento cinematográfico de color."
     },
     "thumbnail": "",
     "images": [],
-    "videoUrl": "",
+    "videoUrl": "https://youtu.be/A9Rkl91Vvjo",
     "modelUrl": "",
-    "tags": ["After Effects", "Adobe Premiere Pro", "Sound Design", "Educational Content"],
-    "year": 2024
+    "tags": ["After Effects", "Adobe Premiere Pro", "Color Grading", "Motion Graphics"],
+    "year": 2025
   }
 ]
