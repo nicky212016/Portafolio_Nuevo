@@ -34,7 +34,7 @@ const Navbar = ({ dark, toggleTheme }: NavbarProps) => {
   }, []);
 
   return (
-    <nav className="fixed top-0 z-50 w-full border-b border-gray-200/80 bg-white/80 backdrop-blur-md dark:border-dark-border/80 dark:bg-dark-bg/80">
+    <nav className="fixed top-0 z-50 w-full border-b border-white/10 bg-white/50 backdrop-blur-xl dark:border-dark-border/50 dark:bg-dark-bg/50">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3">
         <a
           href="#inicio"

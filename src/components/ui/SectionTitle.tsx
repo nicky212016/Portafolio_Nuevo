@@ -7,7 +7,7 @@ interface SectionTitleProps {
 
 const SectionTitle = ({ title, subtitle }: SectionTitleProps) => (
   <div className="mb-12 text-center">
-    <h2 className="text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl">
+    <h2 className="text-gradient text-3xl font-bold tracking-tight sm:text-4xl">
       {title}
     </h2>
     {subtitle && (

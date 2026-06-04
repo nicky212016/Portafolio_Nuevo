@@ -19,7 +19,7 @@ const Projects = () => {
   const close = useCallback(() => setSelected(null), []);
 
   return (
-    <section id="proyectos" className="bg-dark-card/30 py-24 dark:bg-dark-card/30">
+    <section id="proyectos" className="glass-card py-24">
       <div className="mx-auto max-w-6xl px-4">
         <SectionTitle title={t("projects.title")} subtitle={t("projects.subtitle")} />
 

@@ -16,20 +16,23 @@ const About = () => {
       <div className="mx-auto max-w-6xl px-4">
         <SectionTitle title={t("about.title")} subtitle={t("about.subtitle")} />
 
-        <div className="mx-auto flex max-w-3xl flex-col items-center gap-8 text-center sm:flex-row sm:text-left">
-          <img
-            src={typedProfile.avatar}
-            alt={typedProfile.name}
-            loading="lazy"
-            className="h-40 w-40 flex-shrink-0 rounded-2xl object-cover shadow-md"
-          />
-          <div>
-            <p className="text-lg leading-relaxed text-gray-600 dark:text-white/70">
+        <div className="glass-card card-hover mx-auto flex max-w-4xl flex-col items-center gap-8 rounded-2xl p-8 sm:flex-row sm:p-10">
+          <div className="relative flex-shrink-0">
+            <div className="absolute -inset-1 rounded-2xl bg-gradient-primary opacity-40 blur-lg" />
+            <img
+              src={typedProfile.avatar}
+              alt={typedProfile.name}
+              loading="lazy"
+              className="relative h-40 w-40 rounded-2xl object-cover shadow-lg sm:h-48 sm:w-48"
+            />
+          </div>
+          <div className="flex-1 text-center sm:text-left">
+            <p className="text-lg leading-relaxed text-gray-700 dark:text-gray-200">
               {tData(typedProfile.bio)}
             </p>
-            <div className="mt-4 flex flex-wrap items-center justify-center gap-4 text-sm text-gray-500 dark:text-white/50 sm:justify-start">
+            <div className="mt-4 flex flex-wrap items-center justify-center gap-4 text-sm text-gray-500 dark:text-white/60 sm:justify-start">
               <span className="flex items-center gap-1.5">
-                <MapPin size={14} />
+                <MapPin size={14} className="text-primary-500" />
                 {tData(typedProfile.location)}
               </span>
               <a

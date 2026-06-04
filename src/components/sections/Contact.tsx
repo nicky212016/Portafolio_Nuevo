@@ -34,14 +34,14 @@ const Contact = () => {
   const { t } = useTranslation();
 
   return (
-    <section id="contacto" className="bg-dark-card/30 py-24 dark:bg-dark-card/30">
+    <section id="contacto" className="glass-card py-24">
       <div className="mx-auto max-w-6xl px-4">
         <SectionTitle title={t("contact.title")} subtitle={t("contact.subtitle")} />
 
         <div className="mx-auto max-w-xl">
           <a
             href={`mailto:${typedProfile.email}`}
-            className="flex items-center justify-center gap-3 rounded-2xl border border-gray-200 bg-white p-5 text-lg font-medium text-gray-700 shadow-sm transition-all hover:border-primary-300 hover:text-primary-500 dark:border-dark-border dark:bg-dark-card dark:text-white/70 dark:hover:border-primary-600 dark:hover:text-primary-400"
+            className="glass-card card-hover flex items-center justify-center gap-3 rounded-2xl p-5 text-lg font-medium text-gray-700 transition-all dark:text-white/70 dark:hover:text-primary-400"
           >
             <Mail size={22} />
             {typedProfile.email}
@@ -55,7 +55,7 @@ const Contact = () => {
                   href={typedSocial[key]}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2 rounded-xl border border-gray-200 px-4 py-2.5 text-sm font-medium text-gray-600 transition-all hover:border-primary-300 hover:text-primary-500 dark:border-dark-border dark:text-white/60 dark:hover:border-primary-600 dark:hover:text-primary-400"
+                  className="glass-card card-hover flex items-center gap-2 rounded-xl px-4 py-2.5 text-sm font-medium text-gray-600 transition-all dark:text-white/60 dark:hover:text-primary-400"
                 >
                   <Icon size={18} />
                   {label}

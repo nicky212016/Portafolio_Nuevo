@@ -9,3 +9,155 @@ html {
 ::selection {
   @apply bg-primary-500/20 text-primary-700 dark:text-primary-300;
 }
+
+/* ── Animations ── */
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+}
+
+@keyframes gradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes glow {
+  0%, 100% { box-shadow: 0 0 20px rgba(234, 124, 0, 0.3); }
+  50% { box-shadow: 0 0 40px rgba(234, 124, 0, 0.6); }
+}
+
+@keyframes slideInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes particle-float {
+  0%, 100% { transform: translate(0, 0); }
+  25% { transform: translate(10px, -10px); }
+  50% { transform: translate(-5px, 5px); }
+  75% { transform: translate(-10px, -5px); }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+  will-change: transform;
+}
+
+.animate-gradient {
+  background-size: 200% 200%;
+  animation: gradient 8s ease infinite;
+}
+
+.animate-glow {
+  animation: glow 2s ease-in-out infinite;
+  will-change: box-shadow;
+}
+
+.animate-slide-in-up {
+  animation: slideInUp 0.6s ease-out forwards;
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.8s ease-out forwards;
+}
+
+.particle {
+  animation: particle-float 8s ease-in-out infinite;
+  will-change: transform;
+}
+
+/* ── Glass card ── */
+
+.glass-card {
+  background: rgba(10, 51, 72, 0.4);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(26, 74, 96, 0.5);
+}
+
+@media (prefers-color-scheme: light) {
+  .glass-card {
+    background: rgba(255, 255, 255, 0.7);
+    border: 1px solid rgba(234, 124, 0, 0.15);
+  }
+}
+
+.card-hover {
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+    box-shadow 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card-hover:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+/* ── Gradients ── */
+
+.gradient-primary {
+  background: linear-gradient(135deg, #ea7c00 0%, #f58f33 50%, #c76a00 100%);
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, #f58f33 0%, #ea7c00 50%, #c76a00 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ── Background pattern ── */
+
+.bg-pattern {
+  background-image:
+    radial-gradient(at 20% 20%, rgba(234, 124, 0, 0.25) 0px, transparent 50%),
+    radial-gradient(at 80% 30%, rgba(245, 143, 51, 0.2) 0px, transparent 50%),
+    radial-gradient(at 40% 80%, rgba(199, 106, 0, 0.2) 0px, transparent 50%),
+    radial-gradient(at 0% 60%, rgba(248, 171, 102, 0.15) 0px, transparent 50%);
+}
+
+/* ── Scrollbar ── */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #072737;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #ea7c00, #c76a00);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #f58f33, #ea7c00);
+}
+
+/* ── Reduced motion ── */
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-float,
+  .animate-gradient,
+  .animate-glow,
+  .animate-slide-in-up,
+  .animate-fade-in,
+  .particle {
+    animation: none !important;
+  }
+
+  .card-hover:hover {
+    transform: none !important;
+  }
+
+  html {
+    scroll-behavior: auto !important;
+  }
+}

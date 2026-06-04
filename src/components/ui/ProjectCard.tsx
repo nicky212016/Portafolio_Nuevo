@@ -14,7 +14,7 @@ const ProjectCard = ({ project, onSelect }: ProjectCardProps) => {
   return (
     <article
       onClick={handleClick}
-      className="group cursor-pointer overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm transition-all hover:shadow-lg dark:border-dark-border dark:bg-dark-card"
+      className="group card-hover cursor-pointer overflow-hidden rounded-2xl glass-card"
     >
       <div className="relative aspect-video overflow-hidden bg-gray-100 dark:bg-dark-bg">
         <img

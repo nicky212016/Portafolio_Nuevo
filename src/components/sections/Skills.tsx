@@ -5,6 +5,16 @@ import type { Skill } from "../../types";
 
 const typedSkills = skills as Skill[];
 
+const categoryColor: Record<string, string> = {
+  Motion: "text-primary-500 border-primary-500/30",
+  Video: "text-primary-400 border-primary-400/30",
+  Design: "text-primary-600 border-primary-600/30",
+  "3D": "text-primary-700 border-primary-700/30",
+  Programming: "text-primary-500 border-primary-500/30",
+};
+
+const defaultColor = "text-gray-500 border-gray-500/30";
+
 const Skills = () => {
   const { t } = useTranslation();
 
@@ -16,7 +26,9 @@ const Skills = () => {
           {typedSkills.map((skill) => (
             <span
               key={skill.name}
-              className="rounded-full border border-primary-200 bg-primary-50/50 px-4 py-1.5 text-sm font-medium text-primary-700 dark:border-primary-800 dark:bg-primary-950/30 dark:text-primary-300"
+              className={`glass-card rounded-full border px-4 py-1.5 text-sm font-medium backdrop-blur-sm transition-all duration-300 hover:scale-105 ${
+                categoryColor[skill.category] || defaultColor
+              }`}
             >
               {skill.name}
             </span>
