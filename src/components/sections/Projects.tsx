@@ -22,13 +22,25 @@ const categoryIcons: Record<string, typeof Box> = {
   Programming: Code,
 };
 
+const INITIAL_VISIBLE = 3;
+
 const Projects = () => {
   const { t } = useTranslation();
   const [selected, setSelected] = useState<Project | null>(null);
+  const [expanded, setExpanded] = useState<Set<string>>(new Set());
   const modalRef = useRef<HTMLDivElement>(null);
 
   const open = useCallback((project: Project) => setSelected(project), []);
   const close = useCallback(() => setSelected(null), []);
+
+  const toggleCategory = useCallback((cat: string) => {
+    setExpanded((prev) => {
+      const next = new Set(prev);
+      if (next.has(cat)) next.delete(cat);
+      else next.add(cat);
+      return next;
+    });
+  }, []);
 
   useFocusTrap(modalRef, !!selected);
 
@@ -52,6 +64,10 @@ const Projects = () => {
         <div className="section-panel rounded-3xl p-5 sm:p-8">
           {groups.map(({ category, projects: catProjects }) => {
             const Icon = categoryIcons[category] || Box;
+            const isExpanded = expanded.has(category);
+            const visible = isExpanded ? catProjects : catProjects.slice(0, INITIAL_VISIBLE);
+            const hasMore = catProjects.length > INITIAL_VISIBLE;
+
             return (
               <div key={category} className="mb-10 last:mb-0">
                 <div className="mb-5 flex items-center gap-2.5">
@@ -66,7 +82,7 @@ const Projects = () => {
                   </span>
                 </div>
                 <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-                  {catProjects.map((project) => (
+                  {visible.map((project) => (
                     <ProjectCard
                       key={project.id}
                       project={project}
@@ -74,6 +90,18 @@ const Projects = () => {
                     />
                   ))}
                 </div>
+                {hasMore && (
+                  <div className="mt-5 flex justify-center">
+                    <button
+                      onClick={() => toggleCategory(category)}
+                      className="rounded-xl border border-primary-500/25 px-5 py-2 text-sm font-medium text-primary-400 transition-colors hover:bg-primary-500/10 hover:border-primary-500/40"
+                    >
+                      {isExpanded
+                        ? t("projects.showLess")
+                        : t("projects.showMore", { count: catProjects.length - INITIAL_VISIBLE })}
+                    </button>
+                  </div>
+                )}
               </div>
             );
           })}

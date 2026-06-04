@@ -19,6 +19,8 @@
   "projects": {
     "title": "Projects",
     "subtitle": "Featured work",
+    "showMore": "Show {{count}} more",
+    "showLess": "Show less",
     "categories": {
       "3D": "3D Animation",
       "Motion": "Motion Graphics",
