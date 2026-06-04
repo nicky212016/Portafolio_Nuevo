@@ -34,29 +34,29 @@ const Navbar = ({ dark, toggleTheme }: NavbarProps) => {
   }, []);
 
   return (
-    <nav className="fixed top-0 z-50 w-full border-b border-gray-200/80 bg-white/80 backdrop-blur-md dark:border-dark-border/80 dark:bg-dark-bg/80">
+    <nav className="fixed top-0 z-50 w-full border-b border-dark-border/30 bg-dark-bg/90 backdrop-blur-xl dark:border-dark-border/30 dark:bg-dark-bg/90">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3">
         <a
           href="#inicio"
-          className="text-lg font-semibold tracking-tight text-primary-500 dark:text-primary-400"
+          className="bg-gradient-electric bg-clip-text text-lg font-bold tracking-tight text-transparent"
         >
-          Portfolio
+          NC
         </a>
 
-        <div className="hidden items-center gap-6 md:flex">
+        <div className="hidden items-center gap-1 md:flex">
           {links.map((link) => (
             <a
               key={link.href}
               href={link.href}
-              className="text-sm font-medium text-gray-600 transition-colors hover:text-gray-900 dark:text-white/60 dark:hover:text-white"
+              className="rounded-lg px-3 py-2 text-sm font-medium text-gray-400 transition-all hover:bg-white/5 hover:text-white"
             >
               {t(link.key)}
             </a>
           ))}
-          <div className="ml-2 flex items-center gap-1 border-l border-gray-200 pl-4 dark:border-dark-border">
+          <div className="ml-2 flex items-center gap-1 border-l border-dark-border pl-3">
             <button
               onClick={toggleLang}
-              className="flex items-center gap-1 rounded-lg px-2.5 py-1.5 text-xs font-medium text-gray-500 transition-colors hover:bg-gray-100 dark:text-white/50 dark:hover:bg-dark-card"
+              className="flex items-center gap-1 rounded-lg px-2.5 py-1.5 text-xs font-medium text-gray-500 transition-colors hover:bg-white/5 hover:text-white"
               aria-label="Cambiar idioma"
             >
               <Languages size={14} />
@@ -64,7 +64,7 @@ const Navbar = ({ dark, toggleTheme }: NavbarProps) => {
             </button>
             <button
               onClick={toggleTheme}
-              className="rounded-full p-2 text-gray-600 transition-colors hover:bg-gray-100 dark:text-white/60 dark:hover:bg-dark-card"
+              className="rounded-lg p-2 text-gray-500 transition-colors hover:bg-white/5 hover:text-white"
               aria-label="Cambiar tema"
             >
               {dark ? <Sun size={18} /> : <Moon size={18} />}
@@ -75,21 +75,21 @@ const Navbar = ({ dark, toggleTheme }: NavbarProps) => {
         <div className="flex items-center gap-2 md:hidden">
           <button
             onClick={toggleLang}
-            className="rounded-lg px-2.5 py-1.5 text-xs font-medium text-gray-500 transition-colors hover:bg-gray-100 dark:text-white/50 dark:hover:bg-dark-card"
+            className="rounded-lg px-2.5 py-1.5 text-xs font-medium text-gray-500 transition-colors hover:bg-white/5 hover:text-white"
             aria-label="Cambiar idioma"
           >
             {i18next.language === "en" ? "ES" : "EN"}
           </button>
           <button
             onClick={toggleTheme}
-            className="rounded-full p-2 text-gray-600 transition-colors hover:bg-gray-100 dark:text-white/60 dark:hover:bg-dark-card"
+            className="rounded-lg p-2 text-gray-500 transition-colors hover:bg-white/5 hover:text-white"
             aria-label="Cambiar tema"
           >
             {dark ? <Sun size={18} /> : <Moon size={18} />}
           </button>
           <button
             onClick={toggleMenu}
-            className="rounded-full p-2 text-gray-600 transition-colors hover:bg-gray-100 dark:text-white/60 dark:hover:bg-dark-card"
+            className="rounded-lg p-2 text-gray-500 transition-colors hover:bg-white/5 hover:text-white"
             aria-label="Menú"
           >
             {open ? <X size={20} /> : <Menu size={20} />}
@@ -103,15 +103,15 @@ const Navbar = ({ dark, toggleTheme }: NavbarProps) => {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
-            className="overflow-hidden border-t border-gray-200/80 dark:border-dark-border/80 md:hidden"
+            className="overflow-hidden border-t border-dark-border/30 md:hidden"
           >
-            <div className="flex flex-col gap-2 px-4 pb-4 pt-2">
+            <div className="flex flex-col gap-1 px-4 pb-4 pt-2">
               {links.map((link) => (
                 <a
                   key={link.href}
                   href={link.href}
                   onClick={closeMenu}
-                  className="rounded-lg px-3 py-2 text-sm font-medium text-gray-600 transition-colors hover:bg-gray-100 dark:text-white/60 dark:hover:bg-dark-card"
+                  className="rounded-lg px-3 py-2 text-sm font-medium text-gray-400 transition-colors hover:bg-white/5 hover:text-white"
                 >
                   {t(link.key)}
                 </a>

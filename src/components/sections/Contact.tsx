@@ -34,20 +34,20 @@ const Contact = () => {
   const { t } = useTranslation();
 
   return (
-    <section id="contacto" className="bg-dark-card/30 py-24 dark:bg-dark-card/30">
+    <section id="contacto" className="relative py-24">
       <div className="mx-auto max-w-6xl px-4">
         <SectionTitle title={t("contact.title")} subtitle={t("contact.subtitle")} />
 
         <div className="mx-auto max-w-xl">
           <a
             href={`mailto:${typedProfile.email}`}
-            className="flex items-center justify-center gap-3 rounded-2xl border border-gray-200 bg-white p-5 text-lg font-medium text-gray-700 shadow-sm transition-all hover:border-primary-300 hover:text-primary-500 dark:border-dark-border dark:bg-dark-card dark:text-white/70 dark:hover:border-primary-600 dark:hover:text-primary-400"
+            className="group flex items-center justify-center gap-3 rounded-2xl border border-dark-border/50 bg-dark-card/40 p-5 text-lg font-medium text-gray-300 shadow-lg backdrop-blur-sm transition-all hover:border-neon-cyan/40 hover:text-neon-cyan hover:shadow-[0_0_30px_rgba(0,240,255,0.1)]"
           >
-            <Mail size={22} />
+            <Mail size={22} className="transition-colors group-hover:text-neon-cyan" />
             {typedProfile.email}
           </a>
 
-          <div className="mt-6 flex justify-center gap-4">
+          <div className="mt-6 flex flex-wrap justify-center gap-4">
             {socialLinks.map(({ key, icon: Icon, label }) =>
               typedSocial[key] ? (
                 <a
@@ -55,16 +55,16 @@ const Contact = () => {
                   href={typedSocial[key]}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2 rounded-xl border border-gray-200 px-4 py-2.5 text-sm font-medium text-gray-600 transition-all hover:border-primary-300 hover:text-primary-500 dark:border-dark-border dark:text-white/60 dark:hover:border-primary-600 dark:hover:text-primary-400"
+                  className="group flex items-center gap-2 rounded-xl border border-dark-border/50 bg-dark-card/30 px-4 py-2.5 text-sm font-medium text-gray-400 shadow-sm backdrop-blur-sm transition-all hover:border-neon-cyan/40 hover:text-neon-cyan hover:shadow-[0_0_20px_rgba(0,240,255,0.1)]"
                 >
-                  <Icon size={18} />
+                  <Icon size={18} className="transition-transform group-hover:scale-110" />
                   {label}
                 </a>
               ) : null,
             )}
           </div>
 
-          <p className="mt-8 text-center text-sm text-gray-400 dark:text-white/40">
+          <p className="mt-8 text-center text-sm text-gray-500">
             {t("contact.message")}
           </p>
         </div>
