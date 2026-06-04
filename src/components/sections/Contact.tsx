@@ -47,7 +47,7 @@ const Contact = () => {
             {typedProfile.email}
           </a>
 
-          <div className="mt-6 flex justify-center gap-4">
+          <div className="mt-6 flex flex-wrap justify-center gap-4">
             {socialLinks.map(({ key, icon: Icon, label }) =>
               typedSocial[key] ? (
                 <a

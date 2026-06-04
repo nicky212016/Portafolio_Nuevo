@@ -45,10 +45,16 @@ body {
 }
 
 @keyframes particle-float {
-  0%, 100% { transform: translate(0, 0); }
-  25% { transform: translate(10px, -10px); }
-  50% { transform: translate(-5px, 5px); }
-  75% { transform: translate(-10px, -5px); }
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  20% { transform: translate(15px, -20px) scale(1.05); }
+  40% { transform: translate(-10px, 15px) scale(0.95); }
+  60% { transform: translate(20px, 10px) scale(1.02); }
+  80% { transform: translate(-15px, -12px) scale(0.98); }
+}
+
+.particle {
+  animation: particle-float 12s ease-in-out infinite;
+  will-change: transform;
 }
 
 @keyframes star-scroll {
@@ -230,6 +236,20 @@ body {
 
 ::-webkit-scrollbar-thumb:hover {
   background: linear-gradient(180deg, #f58f33, #ea7c00);
+}
+
+/* ── Mobile performance ── */
+
+@media (max-width: 640px) {
+  .particle {
+    opacity: 0.15 !important;
+    animation-duration: 20s !important;
+  }
+
+  .star-layer-2,
+  .star-layer-3 {
+    animation: none !important;
+  }
 }
 
 /* ── Reduced motion ── */

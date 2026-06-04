@@ -1,5 +1,6 @@
 import { useRef, useMemo } from "react";
-import { Canvas, useFrame, Group } from "@react-three/fiber";
+import { Canvas, useFrame } from "@react-three/fiber";
+import { Group } from "three";
 import { Float, MeshDistortMaterial } from "@react-three/drei";
 
 interface ShapeConfig {

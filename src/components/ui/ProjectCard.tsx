@@ -33,7 +33,7 @@ const ProjectCard = ({ project, onSelect }: ProjectCardProps) => {
       <div className="p-5">
         <div className="mb-2 flex items-start justify-between gap-2">
           {project.tags.length > 0 && (
-            <div className="flex items-center gap-2">
+            <div className="flex flex-wrap items-center gap-2">
               {project.tags.slice(0, 3).map((tag) => (
                 <span
                   key={tag}

@@ -32,7 +32,7 @@ const Hero = () => {
           </p>
         </div>
 
-        <div className="mt-8 flex items-center gap-3">
+        <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
           <a
             href="#proyectos"
             className="btn-primary rounded-xl px-6 py-3 text-sm font-semibold"

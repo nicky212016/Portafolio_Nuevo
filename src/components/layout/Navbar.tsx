@@ -63,9 +63,10 @@ const Navbar = () => {
         <div className="flex items-center gap-2 md:hidden">
           <button
             onClick={toggleLang}
-            className="rounded-lg px-2.5 py-1.5 text-xs font-medium text-white/50 transition-colors hover:bg-dark-card hover:text-primary-400"
+            className="flex items-center gap-1 rounded-lg px-2 py-1.5 text-xs font-medium text-white/50 transition-colors hover:bg-dark-card hover:text-primary-400"
             aria-label="Cambiar idioma"
           >
+            <Languages size={14} />
             {i18next.language === "en" ? "ES" : "EN"}
           </button>
           <button

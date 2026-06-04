@@ -27,7 +27,7 @@ const About = () => {
             />
           </div>
           <div className="flex-1 text-center sm:text-left">
-            <p className="text-lg leading-relaxed text-gray-700 dark:text-gray-200">
+            <p className="text-base leading-relaxed text-gray-700 dark:text-gray-200 sm:text-lg">
               {tData(typedProfile.bio)}
             </p>
             <div className="mt-4 flex flex-wrap items-center justify-center gap-4 text-sm text-gray-500 dark:text-white/60 sm:justify-start">
