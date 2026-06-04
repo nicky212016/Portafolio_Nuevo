@@ -1,0 +1,18 @@
+{
+  "name": "Alejandro",
+  "title": {
+    "en": "Multimedia Engineer",
+    "es": "Ingeniero Multimedia"
+  },
+  "email": "correo@ejemplo.com",
+  "location": {
+    "en": "Bogotá, Colombia",
+    "es": "Bogotá, Colombia"
+  },
+  "bio": {
+    "en": "Multimedia Engineer passionate about creating impactful visual experiences. Specialized in 3D modeling, animation, video editing and interactive content development.",
+    "es": "Ingeniero Multimedia apasionado por crear experiencias visuales impactantes. Especializado en modelado 3D, animación, edición de video y desarrollo de contenido interactivo."
+  },
+  "avatar": "https://res.cloudinary.com/tu-cloud/image/upload/v1/avatar.jpg",
+  "heroVideo": "https://www.youtube.com/embed/VIDEO_ID"
+}

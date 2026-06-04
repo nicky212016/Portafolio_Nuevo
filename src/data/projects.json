@@ -1,0 +1,36 @@
+[
+  {
+    "id": "proyecto-1",
+    "title": {
+      "en": "3D Character Animation",
+      "es": "Animación de Personaje 3D"
+    },
+    "description": {
+      "en": "Short film project featuring a 3D character, modeled in Blender and animated with advanced rigging techniques. Post-production in After Effects.",
+      "es": "Proyecto de cortometraje con personaje 3D, modelado en Blender y animado con técnicas avanzadas de rigging. Postproducción en After Effects."
+    },
+    "thumbnail": "https://res.cloudinary.com/tu-cloud/image/upload/v1/proyecto1-thumb.jpg",
+    "images": [],
+    "videoUrl": "https://www.youtube.com/watch?v=VIDEO_ID",
+    "modelUrl": "",
+    "tags": ["Blender", "After Effects", "Premiere"],
+    "year": 2025
+  },
+  {
+    "id": "proyecto-2",
+    "title": {
+      "en": "Virtual Reality Experience",
+      "es": "Experiencia de Realidad Virtual"
+    },
+    "description": {
+      "en": "Interactive VR environment built with Unreal Engine, featuring realistic materials and dynamic lighting for an immersive experience.",
+      "es": "Entorno VR interactivo construido con Unreal Engine, con materiales realistas e iluminación dinámica para una experiencia inmersiva."
+    },
+    "thumbnail": "https://res.cloudinary.com/tu-cloud/image/upload/v1/proyecto2-thumb.jpg",
+    "images": [],
+    "videoUrl": "",
+    "modelUrl": "https://sketchfab.com/3d-models/model-id",
+    "tags": ["Maya", "Substance Painter", "Unreal Engine"],
+    "year": 2024
+  }
+]

@@ -1,0 +1,10 @@
+[
+  { "name": "Blender", "category": "3D" },
+  { "name": "After Effects", "category": "Motion" },
+  { "name": "Premiere Pro", "category": "Video" },
+  { "name": "Photoshop", "category": "Design" },
+  { "name": "Maya", "category": "3D" },
+  { "name": "Substance Painter", "category": "3D" },
+  { "name": "Unreal Engine", "category": "3D" },
+  { "name": "Unity", "category": "Interactive" }
+]

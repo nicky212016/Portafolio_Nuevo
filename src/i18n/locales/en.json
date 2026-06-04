@@ -1,0 +1,31 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "skills": "Skills",
+    "contact": "Contact"
+  },
+  "hero": {
+    "viewProjects": "View projects",
+    "contact": "Contact",
+    "scroll": "Scroll"
+  },
+  "about": {
+    "title": "About me",
+    "subtitle": "Get to know me"
+  },
+  "projects": {
+    "title": "Projects",
+    "subtitle": "Featured work"
+  },
+  "skills": {
+    "title": "Skills",
+    "subtitle": "Tools & technologies"
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Let's talk about your next project",
+    "message": "Send me a direct message through any of my social networks."
+  }
+}

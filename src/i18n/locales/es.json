@@ -1,0 +1,31 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "about": "Sobre mí",
+    "projects": "Proyectos",
+    "skills": "Habilidades",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "viewProjects": "Ver proyectos",
+    "contact": "Contacto",
+    "scroll": "Scroll"
+  },
+  "about": {
+    "title": "Sobre mí",
+    "subtitle": "Conóceme un poco más"
+  },
+  "projects": {
+    "title": "Proyectos",
+    "subtitle": "Trabajos realizados"
+  },
+  "skills": {
+    "title": "Habilidades",
+    "subtitle": "Herramientas y tecnologías"
+  },
+  "contact": {
+    "title": "Contacto",
+    "subtitle": "Hablemos sobre tu próximo proyecto",
+    "message": "Envíame un mensaje directo por cualquiera de mis redes sociales."
+  }
+}
