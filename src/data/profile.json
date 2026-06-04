@@ -1,18 +1,18 @@
 {
-  "name": "Alejandro",
+  "name": "Nicolás Cortés Restrepo",
   "title": {
-    "en": "Multimedia Engineer",
-    "es": "Ingeniero Multimedia"
+    "en": "Multimedia Engineer | Motion Graphic Designer",
+    "es": "Ingeniero Multimedia | Motion Graphic Designer"
   },
-  "email": "correo@ejemplo.com",
+  "email": "nicorestrepo2010@gmail.com",
   "location": {
-    "en": "Bogotá, Colombia",
-    "es": "Bogotá, Colombia"
+    "en": "Cali, Valle del Cauca, Colombia",
+    "es": "Cali, Valle del Cauca, Colombia"
   },
   "bio": {
-    "en": "Multimedia Engineer passionate about creating impactful visual experiences. Specialized in 3D modeling, animation, video editing and interactive content development.",
-    "es": "Ingeniero Multimedia apasionado por crear experiencias visuales impactantes. Especializado en modelado 3D, animación, edición de video y desarrollo de contenido interactivo."
+    "en": "Multimedia Engineer specializing in motion graphics, animation, and audiovisual design. I create animated pieces, video edits, and visual content using After Effects, Premiere Pro, Photoshop, and Illustrator. Certified by Vancouver Film School in Motion Graphics, with experience developing educational, advertising, and digital content. I combine analytical thinking, creativity, and attention to detail to produce clear, engaging animations with purpose.",
+    "es": "Ingeniero Multimedia con enfoque en motion graphics, animación y diseño audiovisual. Creo piezas animadas, ediciones de video y contenido visual usando After Effects, Premiere Pro, Photoshop e Illustrator. Certificado por Vancouver Film School en Motion Graphics, con experiencia desarrollando contenido educativo, publicitario y digital. Combino pensamiento analítico, creatividad y atención al detalle para producir animaciones claras, atractivas y con propósito."
   },
   "avatar": "https://res.cloudinary.com/tu-cloud/image/upload/v1/avatar.jpg",
-  "heroVideo": "https://www.youtube.com/embed/VIDEO_ID"
+  "heroVideo": ""
 }

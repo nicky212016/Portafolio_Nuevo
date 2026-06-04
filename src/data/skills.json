@@ -1,10 +1,9 @@
 [
-  { "name": "Blender", "category": "3D" },
   { "name": "After Effects", "category": "Motion" },
-  { "name": "Premiere Pro", "category": "Video" },
-  { "name": "Photoshop", "category": "Design" },
-  { "name": "Maya", "category": "3D" },
-  { "name": "Substance Painter", "category": "3D" },
-  { "name": "Unreal Engine", "category": "3D" },
-  { "name": "Unity", "category": "Interactive" }
+  { "name": "Adobe Premiere Pro", "category": "Video" },
+  { "name": "Adobe Photoshop", "category": "Design" },
+  { "name": "Adobe Illustrator", "category": "Design" },
+  { "name": "Blender", "category": "3D" },
+  { "name": "Motion Graphics", "category": "Motion" },
+  { "name": "Python", "category": "Programming" }
 ]

@@ -1,36 +1,53 @@
 [
   {
-    "id": "proyecto-1",
+    "id": "colab-soyfonse",
     "title": {
-      "en": "3D Character Animation",
-      "es": "Animación de Personaje 3D"
+      "en": "Content for @soyfonse (1.5M+ followers)",
+      "es": "Contenido para @soyfonse (1.5M+ seguidores)"
     },
     "description": {
-      "en": "Short film project featuring a 3D character, modeled in Blender and animated with advanced rigging techniques. Post-production in After Effects.",
-      "es": "Proyecto de cortometraje con personaje 3D, modelado en Blender y animado con técnicas avanzadas de rigging. Postproducción en After Effects."
+      "en": "Edited two multimedia pieces for digital creator @soyfonse (295K Instagram, 1.3M TikTok). One piece reached 172K views and 8.7K likes. Work involved musical timing, motion graphics, color correction, rotoscoping, and visual rhythm across Instagram and TikTok formats.",
+      "es": "Edición de dos piezas multimedia para el creador digital @soyfonse (295K Instagram, 1.3M TikTok). Una pieza alcanzó 172K visualizaciones y 8.7K likes. Trabajo de timing musical, motion graphics, corrección de color, rotoscopia y ritmo visual en formatos para Instagram y TikTok."
     },
-    "thumbnail": "https://res.cloudinary.com/tu-cloud/image/upload/v1/proyecto1-thumb.jpg",
+    "thumbnail": "",
     "images": [],
-    "videoUrl": "https://www.youtube.com/watch?v=VIDEO_ID",
+    "videoUrl": "",
     "modelUrl": "",
-    "tags": ["Blender", "After Effects", "Premiere"],
+    "tags": ["After Effects", "Adobe Premiere Pro", "Motion Graphics", "Color Correction"],
     "year": 2025
   },
   {
-    "id": "proyecto-2",
+    "id": "motion-portfolio",
     "title": {
-      "en": "Virtual Reality Experience",
-      "es": "Experiencia de Realidad Virtual"
+      "en": "Motion Graphics Portfolio",
+      "es": "Portafolio de Motion Graphics"
     },
     "description": {
-      "en": "Interactive VR environment built with Unreal Engine, featuring realistic materials and dynamic lighting for an immersive experience.",
-      "es": "Entorno VR interactivo construido con Unreal Engine, con materiales realistas e iluminación dinámica para una experiencia inmersiva."
+      "en": "A showcase of motion graphics projects featuring editing, animation, and kinetic typography. Developed as part of the Digital Design Certificate at Vancouver Film School, demonstrating principles of animation, visual composition, and motion design for branding and digital content.",
+      "es": "Muestra de proyectos de motion graphics con edición, animación y tipografía cinética. Desarrollado como parte del Certificado de Diseño Digital en Vancouver Film School, demostrando principios de animación, composición visual y diseño en movimiento para branding y contenido digital."
     },
-    "thumbnail": "https://res.cloudinary.com/tu-cloud/image/upload/v1/proyecto2-thumb.jpg",
+    "thumbnail": "",
     "images": [],
     "videoUrl": "",
-    "modelUrl": "https://sketchfab.com/3d-models/model-id",
-    "tags": ["Maya", "Substance Painter", "Unreal Engine"],
+    "modelUrl": "",
+    "tags": ["After Effects", "Motion Graphics", "Kinetic Typography", "Animation"],
+    "year": 2025
+  },
+  {
+    "id": "educational-video",
+    "title": {
+      "en": "Bilingual Educational Videos",
+      "es": "Videos Educativos Bilingües"
+    },
+    "description": {
+      "en": "Production of bilingual explanatory videos and audiovisual material for learning platforms. Collaboration on visual scripts, sound design, and digital composition for educational content aimed at diverse audiences.",
+      "es": "Producción de videos explicativos bilingües y material audiovisual para plataformas de aprendizaje. Colaboración en guiones visuales, diseño sonoro y composición digital para contenido educativo orientado a diferentes públicos."
+    },
+    "thumbnail": "",
+    "images": [],
+    "videoUrl": "",
+    "modelUrl": "",
+    "tags": ["After Effects", "Adobe Premiere Pro", "Sound Design", "Educational Content"],
     "year": 2024
   }
 ]

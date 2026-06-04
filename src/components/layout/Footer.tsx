@@ -22,7 +22,7 @@ const Footer = () => {
         <div className="flex items-center gap-4">
           {Object.entries(typedSocial).map(([key, url]) => {
             const Icon = icons[key];
-            if (!Icon) return null;
+            if (!Icon || !url) return null;
             return (
               <a
                 key={key}
