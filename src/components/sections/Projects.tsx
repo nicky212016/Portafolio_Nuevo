@@ -1,4 +1,4 @@
-import { useState, useCallback } from "react";
+import { useState, useCallback, useRef } from "react";
 import { useTranslation } from "react-i18next";
 import { motion, AnimatePresence } from "framer-motion";
 import { X } from "lucide-react";
@@ -8,15 +8,19 @@ import ProjectCard from "../ui/ProjectCard";
 import projects from "../../data/projects.json";
 import type { Project } from "../../types";
 import { tData } from "../../utils/tData";
+import { useFocusTrap } from "../../hooks/useFocusTrap";
 
 const typedProjects = projects as Project[];
 
 const Projects = () => {
   const { t } = useTranslation();
   const [selected, setSelected] = useState<Project | null>(null);
+  const modalRef = useRef<HTMLDivElement>(null);
 
   const open = useCallback((project: Project) => setSelected(project), []);
   const close = useCallback(() => setSelected(null), []);
+
+  useFocusTrap(modalRef, !!selected);
 
   return (
     <section id="proyectos" className="py-24">
@@ -46,6 +50,10 @@ const Projects = () => {
               animate={{ opacity: 1, scale: 1, y: 0 }}
               exit={{ opacity: 0, scale: 0.95, y: 20 }}
               onClick={(e) => e.stopPropagation()}
+              ref={modalRef}
+              role="dialog"
+              aria-modal="true"
+              aria-label={tData(selected.title)}
               className="max-h-[90vh] w-full max-w-3xl overflow-y-auto rounded-2xl bg-white shadow-2xl dark:bg-dark-card"
             >
               <div className="relative aspect-video bg-gray-100 dark:bg-dark-bg">

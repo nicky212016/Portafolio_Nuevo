@@ -7,6 +7,7 @@ import { tData } from "../../utils/tData";
 import SectionTitle from "../ui/SectionTitle";
 import SectionScene from "../three/SectionScene";
 import type { Shape } from "../three/SectionScene";
+import { useInView } from "../../hooks/useInView";
 
 const typedProfile = profile as unknown as Profile;
 
@@ -20,10 +21,11 @@ const shapes: Shape[] = [
 
 const About = () => {
   const { t } = useTranslation();
+  const [sectionRef, inView] = useInView<HTMLElement>({ threshold: 0.05 });
 
   return (
-    <section id="sobre-mi" className="relative overflow-hidden py-24">
-      <SectionScene shapes={shapes} />
+    <section ref={sectionRef} id="sobre-mi" className="relative overflow-hidden py-24">
+      <SectionScene shapes={shapes} inView={inView} />
       <div className="mx-auto max-w-6xl px-4">
         <SectionTitle title={t("about.title")} subtitle={t("about.subtitle")} />
 

@@ -1,4 +1,4 @@
-import { useState, memo, useCallback } from "react";
+import { useState, memo, useCallback, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, Languages } from "lucide-react";
@@ -20,8 +20,16 @@ const links: NavLink[] = [
 const Navbar = () => {
   const { t } = useTranslation();
   const [open, setOpen] = useState(false);
+  const [currentHash, setCurrentHash] = useState("");
   const toggleMenu = useCallback(() => setOpen((prev) => !prev), []);
   const closeMenu = useCallback(() => setOpen(false), []);
+
+  useEffect(() => {
+    const onHashChange = () => setCurrentHash(window.location.hash);
+    setCurrentHash(window.location.hash);
+    window.addEventListener("hashchange", onHashChange);
+    return () => window.removeEventListener("hashchange", onHashChange);
+  }, []);
 
   const toggleLang = useCallback(() => {
     const next = i18next.language === "en" ? "es" : "en";
@@ -43,6 +51,7 @@ const Navbar = () => {
             <a
               key={link.href}
               href={link.href}
+              aria-current={currentHash === link.href ? "page" : undefined}
               className="text-sm font-medium text-white/60 transition-colors hover:text-primary-400"
             >
               {t(link.key)}
@@ -93,6 +102,7 @@ const Navbar = () => {
                   key={link.href}
                   href={link.href}
                   onClick={closeMenu}
+                  aria-current={currentHash === link.href ? "page" : undefined}
                   className="rounded-lg px-3 py-2 text-sm font-medium text-white/60 transition-colors hover:bg-dark-card hover:text-primary-400"
                 >
                   {t(link.key)}

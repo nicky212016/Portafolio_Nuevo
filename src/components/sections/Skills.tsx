@@ -4,6 +4,7 @@ import skills from "../../data/skills.json";
 import type { Skill } from "../../types";
 import SectionScene from "../three/SectionScene";
 import type { Shape } from "../three/SectionScene";
+import { useInView } from "../../hooks/useInView";
 
 const typedSkills = skills as Skill[];
 
@@ -27,10 +28,11 @@ const shapes: Shape[] = [
 
 const Skills = () => {
   const { t } = useTranslation();
+  const [sectionRef, inView] = useInView<HTMLElement>({ threshold: 0.05 });
 
   return (
-    <section id="habilidades" className="relative overflow-hidden py-24">
-      <SectionScene shapes={shapes} />
+    <section ref={sectionRef} id="habilidades" className="relative overflow-hidden py-24">
+      <SectionScene shapes={shapes} inView={inView} />
       <div className="mx-auto max-w-6xl px-4">
         <SectionTitle title={t("skills.title")} subtitle={t("skills.subtitle")} />
         <div className="section-panel mx-auto max-w-4xl rounded-3xl p-6 sm:p-8">

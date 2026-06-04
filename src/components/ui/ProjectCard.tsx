@@ -1,5 +1,5 @@
-import { memo, useCallback } from "react";
-import { Play } from "lucide-react";
+import { memo, useCallback, useState } from "react";
+import { Play, Image as ImageIcon } from "lucide-react";
 import type { Project } from "../../types";
 import { tData } from "../../utils/tData";
 
@@ -10,6 +10,9 @@ interface ProjectCardProps {
 
 const ProjectCard = ({ project, onSelect }: ProjectCardProps) => {
   const handleClick = useCallback(() => onSelect(project), [project, onSelect]);
+  const [imgError, setImgError] = useState(false);
+
+  const showPlaceholder = !project.thumbnail || imgError;
 
   return (
     <article
@@ -17,12 +20,19 @@ const ProjectCard = ({ project, onSelect }: ProjectCardProps) => {
       className="group card-hover cursor-pointer overflow-hidden rounded-2xl glass-card"
     >
       <div className="relative aspect-video overflow-hidden bg-gray-100 dark:bg-dark-bg">
-        <img
-          src={project.thumbnail}
-          alt={tData(project.title)}
-          loading="lazy"
-          className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
-        />
+        {showPlaceholder ? (
+          <div className="flex h-full w-full items-center justify-center bg-dark-card/50">
+            <ImageIcon size={32} className="text-white/20" />
+          </div>
+        ) : (
+          <img
+            src={project.thumbnail}
+            alt={tData(project.title)}
+            loading="lazy"
+            onError={() => setImgError(true)}
+            className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+          />
+        )}
         <div className="pointer-events-none absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-black/40 to-transparent" />
         <div className="absolute inset-0 flex items-center justify-center bg-black/0 transition-colors group-hover:bg-black/30">
           <div className="flex h-12 w-12 items-center justify-center rounded-full bg-white/90 opacity-0 shadow-lg transition-opacity group-hover:opacity-100 dark:bg-dark-card/90">

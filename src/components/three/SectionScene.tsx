@@ -1,7 +1,8 @@
-import { useMemo, useRef } from "react";
+import { useMemo, useRef, Suspense } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { Float, MeshDistortMaterial, MeshWobbleMaterial } from "@react-three/drei";
 import { Group } from "three";
+import WebGLErrorBoundary from "./WebGLErrorBoundary";
 
 export interface Shape {
   pos: readonly [number, number, number];
@@ -15,6 +16,7 @@ export interface Shape {
 interface SectionSceneProps {
   shapes?: Shape[];
   className?: string;
+  inView?: boolean;
 }
 
 const Shapes = ({ s }: { s: Shape[] }) => {
@@ -87,23 +89,31 @@ const Shapes = ({ s }: { s: Shape[] }) => {
   );
 };
 
-const SectionScene = ({ shapes, className = "" }: SectionSceneProps) => {
+const SectionScene = ({ shapes, className = "", inView = true }: SectionSceneProps) => {
   const items = useMemo(() => shapes ?? [], [shapes]);
 
   return (
     <div
       className={`pointer-events-none absolute inset-0 -z-10 overflow-hidden ${className}`}
     >
-      <Canvas
-        camera={{ position: [0, 0, 7], fov: 50 }}
-        dpr={[1, 1.2]}
-        gl={{ antialias: false }}
-      >
-        <ambientLight intensity={0.6} />
-        <directionalLight position={[4, 4, 4]} intensity={0.5} />
-        <pointLight position={[-2, 1, 2]} intensity={0.3} color="#ea7c00" />
-        <Shapes s={items} />
-      </Canvas>
+      {inView ? (
+        <WebGLErrorBoundary>
+          <Suspense fallback={null}>
+            <Canvas
+              camera={{ position: [0, 0, 7], fov: 50 }}
+              dpr={[1, 1.2]}
+              gl={{ antialias: false }}
+            >
+              <ambientLight intensity={0.6} />
+              <directionalLight position={[4, 4, 4]} intensity={0.5} />
+              <pointLight position={[-2, 1, 2]} intensity={0.3} color="#ea7c00" />
+              <Shapes s={items} />
+            </Canvas>
+          </Suspense>
+        </WebGLErrorBoundary>
+      ) : (
+        <div className="h-full w-full" />
+      )}
     </div>
   );
 };

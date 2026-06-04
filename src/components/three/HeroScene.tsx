@@ -1,4 +1,4 @@
-import { useRef, useMemo } from "react";
+import { useRef, useMemo, Suspense } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { Group } from "three";
 import {
@@ -7,6 +7,7 @@ import {
   MeshWobbleMaterial,
   Sparkles,
 } from "@react-three/drei";
+import WebGLErrorBoundary from "./WebGLErrorBoundary";
 
 interface ShapeConfig {
   pos: [number, number, number];
@@ -145,17 +146,21 @@ const Shapes = () => {
 };
 
 const HeroScene = () => (
-  <Canvas
-    camera={{ position: [0, 0, 6], fov: 50 }}
-    dpr={[1, 1.5]}
-    gl={{ antialias: true }}
-  >
-    <ambientLight intensity={0.5} />
-    <directionalLight position={[5, 5, 5]} intensity={0.6} />
-    <pointLight position={[-3, 2, 3]} intensity={0.4} color="#ea7c00" />
-    <pointLight position={[3, -2, 3]} intensity={0.3} color="#f58f33" />
-    <Shapes />
-  </Canvas>
+  <WebGLErrorBoundary>
+    <Suspense fallback={null}>
+      <Canvas
+        camera={{ position: [0, 0, 6], fov: 50 }}
+        dpr={[1, 1.5]}
+        gl={{ antialias: true }}
+      >
+        <ambientLight intensity={0.5} />
+        <directionalLight position={[5, 5, 5]} intensity={0.6} />
+        <pointLight position={[-3, 2, 3]} intensity={0.4} color="#ea7c00" />
+        <pointLight position={[3, -2, 3]} intensity={0.3} color="#f58f33" />
+        <Shapes />
+      </Canvas>
+    </Suspense>
+  </WebGLErrorBoundary>
 );
 
 export default HeroScene;
