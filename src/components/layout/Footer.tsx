@@ -26,7 +26,7 @@ const Footer = () => {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="border-t border-dark-border/30">
+    <footer className="border-t border-gray-200 dark:border-dark-border">
       <div className="mx-auto flex max-w-6xl flex-col items-center gap-4 px-4 py-8">
         <div className="flex items-center gap-4">
           {Object.entries(typedSocial).map(([key, url]) => {
@@ -38,7 +38,7 @@ const Footer = () => {
                 href={url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="rounded-lg p-2 text-gray-500 transition-all hover:text-neon-cyan hover:shadow-[0_0_15px_rgba(0,240,255,0.15)]"
+                className="rounded-full p-2 text-gray-500 transition-colors hover:text-primary-500 dark:text-white/40 dark:hover:text-primary-400"
                 aria-label={key}
               >
                 <Icon size={20} />
@@ -47,15 +47,14 @@ const Footer = () => {
           })}
           <a
             href={`mailto:${typedProfile.email}`}
-            className="rounded-lg p-2 text-gray-500 transition-all hover:text-neon-cyan hover:shadow-[0_0_15px_rgba(0,240,255,0.15)]"
+            className="rounded-full p-2 text-gray-500 transition-colors hover:text-primary-500 dark:text-white/40 dark:hover:text-primary-400"
             aria-label="Email"
           >
             <Mail size={20} />
           </a>
         </div>
-        <div className="h-px w-32 bg-gradient-electric" />
-        <p className="text-sm text-gray-500">
-          &copy; {year} {typedProfile.name}
+        <p className="text-sm text-gray-400 dark:text-white/40">
+          &copy; {year} {typedProfile.name}. Todos los derechos reservados.
         </p>
       </div>
     </footer>

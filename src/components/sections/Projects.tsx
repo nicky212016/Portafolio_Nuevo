@@ -19,7 +19,7 @@ const Projects = () => {
   const close = useCallback(() => setSelected(null), []);
 
   return (
-    <section id="proyectos" className="relative py-24">
+    <section id="proyectos" className="bg-dark-card/30 py-24 dark:bg-dark-card/30">
       <div className="mx-auto max-w-6xl px-4">
         <SectionTitle title={t("projects.title")} subtitle={t("projects.subtitle")} />
 
@@ -37,16 +37,16 @@ const Projects = () => {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             onClick={close}
-            className="fixed inset-0 z-50 flex items-center justify-center bg-dark-bg/80 p-4 backdrop-blur-md"
+            className="fixed inset-0 z-50 flex items-center justify-center bg-dark-bg/60 p-4 backdrop-blur-sm"
           >
             <motion.div
               initial={{ opacity: 0, scale: 0.95, y: 20 }}
               animate={{ opacity: 1, scale: 1, y: 0 }}
               exit={{ opacity: 0, scale: 0.95, y: 20 }}
               onClick={(e) => e.stopPropagation()}
-              className="max-h-[90vh] w-full max-w-3xl overflow-y-auto rounded-2xl border border-dark-border/60 bg-dark-card shadow-2xl shadow-neon-cyan/5"
+              className="max-h-[90vh] w-full max-w-3xl overflow-y-auto rounded-2xl bg-white shadow-2xl dark:bg-dark-card"
             >
-              <div className="relative aspect-video bg-dark-bg">
+              <div className="relative aspect-video bg-gray-100 dark:bg-dark-bg">
                 {selected.videoUrl ? (
                   <ReactPlayer
                     url={selected.videoUrl}
@@ -68,22 +68,22 @@ const Projects = () => {
               <div className="p-6">
                 <div className="flex items-start justify-between">
                   <div>
-                    <h3 className="text-2xl font-bold text-white">
+                    <h3 className="text-2xl font-bold text-gray-900 dark:text-white">
                       {tData(selected.title)}
                     </h3>
-                    <span className="text-sm text-gray-500">
+                    <span className="text-sm text-gray-500 dark:text-white/50">
                       {selected.year}
                     </span>
                   </div>
                   <button
                     onClick={close}
-                    className="rounded-full p-2 text-gray-500 transition-colors hover:bg-white/10 hover:text-white"
+                    className="rounded-full p-2 text-gray-400 transition-colors hover:bg-gray-100 dark:hover:bg-dark-bg"
                   >
                     <X size={20} />
                   </button>
                 </div>
 
-                <p className="mt-4 text-gray-300">
+                <p className="mt-4 text-gray-600 dark:text-white/70">
                   {tData(selected.description)}
                 </p>
 
@@ -91,7 +91,7 @@ const Projects = () => {
                   {selected.tags.map((tag) => (
                     <span
                       key={tag}
-                      className="rounded-full border border-neon-cyan/20 bg-neon-cyan/5 px-3 py-1 text-xs font-medium text-neon-cyan"
+                      className="rounded-full bg-primary-50 px-3 py-1 text-xs font-medium text-primary-700 dark:bg-primary-950/50 dark:text-primary-300"
                     >
                       {tag}
                     </span>

@@ -1,4 +1,4 @@
-import { useState, useLayoutEffect } from "react";
+import { useState, useEffect } from "react";
 
 interface UseThemeReturn {
   dark: boolean;
@@ -15,7 +15,7 @@ export const useTheme = (): UseThemeReturn => {
     return false;
   });
 
-  useLayoutEffect(() => {
+  useEffect(() => {
     const root = document.documentElement;
     if (dark) {
       root.classList.add("dark");

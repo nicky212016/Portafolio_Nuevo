@@ -2,62 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --glow-cyan: 0 0 10px rgba(0, 240, 255, 0.3), 0 0 20px rgba(0, 240, 255, 0.1);
-  --glow-magenta: 0 0 10px rgba(255, 0, 229, 0.3), 0 0 20px rgba(255, 0, 229, 0.1);
-  --glow-orange: 0 0 10px rgba(234, 124, 0, 0.3), 0 0 20px rgba(234, 124, 0, 0.1);
-}
-
 html {
   scroll-behavior: smooth;
 }
 
 ::selection {
   @apply bg-primary-500/20 text-primary-700 dark:text-primary-300;
-}
-
-@layer utilities {
-  .text-gradient-electric {
-    @apply bg-gradient-electric bg-clip-text text-transparent;
-  }
-  .text-gradient-cyber {
-    @apply bg-gradient-cyber bg-clip-text text-transparent;
-  }
-  .text-gradient-neon {
-    @apply bg-gradient-neon bg-clip-text text-transparent;
-  }
-  .glow-cyan {
-    box-shadow: var(--glow-cyan);
-  }
-  .glow-magenta {
-    box-shadow: var(--glow-magenta);
-  }
-  .glow-orange {
-    box-shadow: var(--glow-orange);
-  }
-}
-
-@keyframes glow-pulse {
-  0%, 100% { box-shadow: 0 0 5px rgba(0, 240, 255, 0.2), 0 0 10px rgba(0, 240, 255, 0.1); }
-  50% { box-shadow: 0 0 20px rgba(0, 240, 255, 0.5), 0 0 40px rgba(0, 240, 255, 0.2); }
-}
-
-@keyframes border-glow {
-  0%, 100% { border-color: rgba(0, 240, 255, 0.3); }
-  50% { border-color: rgba(255, 0, 229, 0.3); }
-}
-
-.animate-border-glow {
-  animation: border-glow 3s ease-in-out infinite;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  *,
-  *::before,
-  *::after {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
-  }
 }
