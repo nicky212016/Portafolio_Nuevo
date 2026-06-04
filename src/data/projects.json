@@ -106,5 +106,113 @@
     "modelUrl": "",
     "tags": ["After Effects", "Adobe Premiere Pro", "Color Grading", "Motion Graphics"],
     "year": 2025
+  },
+  {
+    "id": "mock-3d-1",
+    "title": {
+      "en": "[Mock] 3D Product Visualization",
+      "es": "[Mock] Visualización 3D de Producto"
+    },
+    "description": {
+      "en": "[MOCK] 3D product visualization showcasing realistic materials, lighting, and camera animation.",
+      "es": "[MOCK] Visualización 3D de producto mostrando materiales realistas, iluminación y animación de cámara."
+    },
+    "category": "3D",
+    "thumbnail": "https://picsum.photos/seed/mock-3d-1/640/360",
+    "images": [],
+    "videoUrl": "",
+    "modelUrl": "",
+    "tags": ["Blender", "3D Modeling", "Texturing", "Lighting"],
+    "year": 2025
+  },
+  {
+    "id": "mock-3d-2",
+    "title": {
+      "en": "[Mock] Character Rigging Demo",
+      "es": "[Mock] Demo de Rigging de Personaje"
+    },
+    "description": {
+      "en": "[MOCK] Character rigging and animation demonstration using advanced armature and weight painting techniques.",
+      "es": "[MOCK] Demostración de rigging y animación de personajes usando técnicas avanzadas de armadura y weight painting."
+    },
+    "category": "3D",
+    "thumbnail": "https://picsum.photos/seed/mock-3d-2/640/360",
+    "images": [],
+    "videoUrl": "",
+    "modelUrl": "",
+    "tags": ["Blender", "Rigging", "Character Animation", "Weight Painting"],
+    "year": 2025
+  },
+  {
+    "id": "mock-3d-3",
+    "title": {
+      "en": "[Mock] Architectural Visualization",
+      "es": "[Mock] Visualización Arquitectónica"
+    },
+    "description": {
+      "en": "[MOCK] Architectural visualization project featuring interior and exterior renders with photorealistic quality.",
+      "es": "[MOCK] Proyecto de visualización arquitectónica con renders interiores y exteriores de calidad fotorrealista."
+    },
+    "category": "3D",
+    "thumbnail": "https://picsum.photos/seed/mock-3d-3/640/360",
+    "images": [],
+    "videoUrl": "",
+    "modelUrl": "",
+    "tags": ["Blender", "Archviz", "Lighting", "Texturing"],
+    "year": 2025
+  },
+  {
+    "id": "mock-motion-1",
+    "title": {
+      "en": "[Mock] Kinetic Typography Showreel",
+      "es": "[Mock] Showreel de Tipografía Cinética"
+    },
+    "description": {
+      "en": "[MOCK] Kinetic typography showreel exploring dynamic text animations, timing, and visual rhythm.",
+      "es": "[MOCK] Showreel de tipografía cinética explorando animaciones de texto dinámicas, timing y ritmo visual."
+    },
+    "category": "Motion",
+    "thumbnail": "https://picsum.photos/seed/mock-motion-1/640/360",
+    "images": [],
+    "videoUrl": "",
+    "modelUrl": "",
+    "tags": ["After Effects", "Kinetic Typography", "Motion Graphics", "Animation"],
+    "year": 2025
+  },
+  {
+    "id": "mock-motion-2",
+    "title": {
+      "en": "[Mock] Logo Animation Pack",
+      "es": "[Mock] Pack de Animación de Logos"
+    },
+    "description": {
+      "en": "[MOCK] Collection of logo animations for various brands, exploring different styles and motion design approaches.",
+      "es": "[MOCK] Colección de animaciones de logotipos para varias marcas, explorando diferentes estilos y enfoques de diseño de movimiento."
+    },
+    "category": "Motion",
+    "thumbnail": "https://picsum.photos/seed/mock-motion-2/640/360",
+    "images": [],
+    "videoUrl": "",
+    "modelUrl": "",
+    "tags": ["After Effects", "Logo Animation", "Motion Design", "Illustrator"],
+    "year": 2025
+  },
+  {
+    "id": "mock-video-1",
+    "title": {
+      "en": "[Mock] Documentary Short Film",
+      "es": "[Mock] Cortometraje Documental"
+    },
+    "description": {
+      "en": "[MOCK] Short documentary film exploring urban stories, edited with Premiere Pro and color graded in DaVinci Resolve.",
+      "es": "[MOCK] Cortometraje documental explorando historias urbanas, editado con Premiere Pro y colorizado en DaVinci Resolve."
+    },
+    "category": "Video",
+    "thumbnail": "https://picsum.photos/seed/mock-video-1/640/360",
+    "images": [],
+    "videoUrl": "",
+    "modelUrl": "",
+    "tags": ["Adobe Premiere Pro", "DaVinci Resolve", "Color Grading", "Documentary"],
+    "year": 2025
   }
 ]
