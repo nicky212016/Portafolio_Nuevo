@@ -1,3 +1,4 @@
 {
+  "installCommand": "pnpm approve-builds esbuild && pnpm install",
   "rewrites": [{ "source": "/(.*)", "destination": "/" }]
 }
