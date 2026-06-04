@@ -2,10 +2,7 @@
   "name": "portafolio-multimedia",
   "private": true,
   "version": "1.0.0",
-  "packageManager": "pnpm@11.1.2",
-  "pnpm": {
-    "onlyBuiltDependencies": ["esbuild"]
-  },
+  "packageManager": "pnpm@10.34.1",
   "type": "module",
   "scripts": {
     "dev": "vite",
