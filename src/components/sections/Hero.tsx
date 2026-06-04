@@ -28,7 +28,7 @@ const Hero = () => {
             {tData(typedProfile.title)}
           </p>
           <p className="mx-auto mt-4 max-w-2xl text-base text-gray-500 dark:text-white/50">
-            {tData(typedProfile.bio)}
+            {tData(typedProfile.shortBio)}
           </p>
         </div>
 

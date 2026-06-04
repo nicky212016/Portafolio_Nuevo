@@ -5,6 +5,7 @@ export interface Profile {
   title: Translatable;
   email: string;
   location: Translatable;
+  shortBio: Translatable;
   bio: Translatable;
   avatar: string;
   heroVideo: string;
