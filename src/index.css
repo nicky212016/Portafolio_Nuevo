@@ -1,9 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 html {
   scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Space Grotesk", "Segoe UI", sans-serif;
 }
 
 ::selection {
@@ -45,6 +51,11 @@ html {
   75% { transform: translate(-10px, -5px); }
 }
 
+@keyframes star-scroll {
+  from { transform: translateY(0); }
+  to { transform: translateY(-2000px); }
+}
+
 .animate-float {
   animation: float 6s ease-in-out infinite;
   will-change: transform;
@@ -76,17 +87,18 @@ html {
 /* ── Glass card ── */
 
 .glass-card {
-  background: rgba(10, 51, 72, 0.4);
+  background: rgba(10, 51, 72, 0.22);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(26, 74, 96, 0.5);
+  border: 1px solid rgba(26, 74, 96, 0.35);
 }
 
-@media (prefers-color-scheme: light) {
-  .glass-card {
-    background: rgba(255, 255, 255, 0.7);
-    border: 1px solid rgba(234, 124, 0, 0.15);
-  }
+.section-panel {
+  background: rgba(10, 51, 72, 0.14);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(26, 74, 96, 0.28);
+  box-shadow: 0 12px 24px rgba(7, 39, 55, 0.12);
 }
 
 .card-hover {
@@ -97,6 +109,33 @@ html {
 .card-hover:hover {
   transform: translateY(-6px) scale(1.02);
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #ea7c00 0%, #c76a00 100%);
+  color: #ffffff;
+  border: 1px solid rgba(234, 124, 0, 0.4);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, filter 0.25s ease;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(164, 88, 0, 0.28);
+  filter: brightness(1.04);
+}
+
+.btn-ghost {
+  border: 1px solid rgba(234, 124, 0, 0.28);
+  background: rgba(10, 51, 72, 0.45);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  transition: transform 0.25s ease, border-color 0.25s ease, background 0.25s ease;
+}
+
+.btn-ghost:hover {
+  transform: translateY(-2px);
+  border-color: rgba(234, 124, 0, 0.44);
+  background: rgba(245, 143, 51, 0.08);
 }
 
 /* ── Gradients ── */
@@ -120,6 +159,58 @@ html {
     radial-gradient(at 80% 30%, rgba(245, 143, 51, 0.2) 0px, transparent 50%),
     radial-gradient(at 40% 80%, rgba(199, 106, 0, 0.2) 0px, transparent 50%),
     radial-gradient(at 0% 60%, rgba(248, 171, 102, 0.15) 0px, transparent 50%);
+}
+
+.starfield-bg {
+  background: radial-gradient(ellipse at bottom, #12344a 0%, #08263a 38%, #041a2a 68%, #010810 100%);
+}
+
+.star-layer {
+  position: absolute;
+  inset: -2000px 0 0 0;
+  background-repeat: repeat;
+  animation: star-scroll linear infinite;
+  will-change: transform;
+}
+
+.star-layer-1 {
+  background-image:
+    radial-gradient(1px 1px at 37px 89px, rgba(255, 255, 255, 1), transparent),
+    radial-gradient(1px 1px at 213px 48px, rgba(255, 255, 255, 0.95), transparent),
+    radial-gradient(1px 1px at 346px 172px, rgba(255, 255, 255, 0.9), transparent),
+    radial-gradient(1px 1px at 512px 64px, rgba(255, 255, 255, 0.88), transparent),
+    radial-gradient(1px 1px at 143px 275px, rgba(255, 255, 255, 0.92), transparent),
+    radial-gradient(1px 1px at 428px 368px, rgba(255, 255, 255, 0.85), transparent),
+    radial-gradient(1px 1px at 76px 412px, rgba(255, 255, 255, 0.9), transparent),
+    radial-gradient(1px 1px at 589px 132px, rgba(255, 255, 255, 0.87), transparent);
+  background-size: 700px 500px;
+  opacity: 1;
+  animation-duration: 60s;
+}
+
+.star-layer-2 {
+  background-image:
+    radial-gradient(1.5px 1.5px at 87px 213px, rgba(255, 255, 255, 1), transparent),
+    radial-gradient(1.5px 1.5px at 367px 89px, rgba(255, 255, 255, 0.92), transparent),
+    radial-gradient(1.5px 1.5px at 534px 287px, rgba(255, 255, 255, 0.85), transparent),
+    radial-gradient(1.5px 1.5px at 124px 498px, rgba(255, 255, 255, 0.88), transparent),
+    radial-gradient(1.5px 1.5px at 654px 156px, rgba(255, 255, 255, 0.8), transparent),
+    radial-gradient(1.5px 1.5px at 289px 586px, rgba(255, 255, 255, 0.78), transparent);
+  background-size: 800px 700px;
+  opacity: 0.78;
+  animation-duration: 90s;
+}
+
+.star-layer-3 {
+  background-image:
+    radial-gradient(2px 2px at 156px 87px, rgba(255, 255, 255, 0.95), transparent),
+    radial-gradient(2px 2px at 478px 312px, rgba(255, 255, 255, 0.82), transparent),
+    radial-gradient(2px 2px at 89px 423px, rgba(255, 255, 255, 0.75), transparent),
+    radial-gradient(2px 2px at 723px 198px, rgba(255, 255, 255, 0.78), transparent),
+    radial-gradient(2px 2px at 345px 678px, rgba(255, 255, 255, 0.7), transparent);
+  background-size: 900px 800px;
+  opacity: 0.55;
+  animation-duration: 120s;
 }
 
 /* ── Scrollbar ── */
@@ -150,6 +241,10 @@ html {
   .animate-slide-in-up,
   .animate-fade-in,
   .particle {
+    animation: none !important;
+  }
+
+  .star-layer {
     animation: none !important;
   }
 

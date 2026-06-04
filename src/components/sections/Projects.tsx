@@ -19,14 +19,16 @@ const Projects = () => {
   const close = useCallback(() => setSelected(null), []);
 
   return (
-    <section id="proyectos" className="glass-card py-24">
+    <section id="proyectos" className="py-24">
       <div className="mx-auto max-w-6xl px-4">
         <SectionTitle title={t("projects.title")} subtitle={t("projects.subtitle")} />
 
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {typedProjects.map((project) => (
-            <ProjectCard key={project.id} project={project} onSelect={open} />
-          ))}
+        <div className="section-panel rounded-3xl p-5 sm:p-8">
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {typedProjects.map((project) => (
+              <ProjectCard key={project.id} project={project} onSelect={open} />
+            ))}
+          </div>
         </div>
       </div>
 

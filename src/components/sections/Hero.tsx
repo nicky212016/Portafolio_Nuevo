@@ -1,6 +1,6 @@
 import { memo } from "react";
 import { useTranslation } from "react-i18next";
-import { ArrowDown } from "lucide-react";
+import { ArrowDown, FileText } from "lucide-react";
 import profile from "../../data/profile.json";
 import type { Profile } from "../../types";
 import { tData } from "../../utils/tData";
@@ -20,7 +20,7 @@ const Hero = () => {
         <HeroScene />
       </div>
       <div className="mx-auto flex w-full max-w-6xl flex-col items-center px-4 text-center">
-        <div>
+        <div className="section-panel animate-slide-in-up rounded-3xl px-6 py-10 sm:px-10">
           <h1 className="text-gradient text-4xl font-bold tracking-tight sm:text-6xl lg:text-7xl">
             {typedProfile.name}
           </h1>
@@ -32,16 +32,24 @@ const Hero = () => {
           </p>
         </div>
 
-        <div className="mt-8 flex items-center gap-4">
+        <div className="mt-8 flex items-center gap-3">
           <a
             href="#proyectos"
-            className="rounded-xl bg-primary-500 px-6 py-3 text-sm font-medium text-white shadow-sm transition-colors hover:bg-primary-600"
+            className="btn-primary rounded-xl px-6 py-3 text-sm font-semibold"
           >
             {t("hero.viewProjects")}
           </a>
           <a
+            href={typedProfile.cv}
+            download
+            className="btn-primary rounded-xl px-5 py-3 text-sm font-semibold inline-flex items-center gap-2"
+          >
+            <FileText size={16} />
+            {t("hero.downloadCV")}
+          </a>
+          <a
             href="#contacto"
-            className="glass-card card-hover rounded-xl border px-6 py-3 text-sm font-medium text-gray-700 transition-all dark:text-white/70"
+            className="btn-ghost rounded-xl px-6 py-3 text-sm font-semibold text-white/75"
           >
             {t("hero.contact")}
           </a>

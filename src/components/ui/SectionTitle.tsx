@@ -11,7 +11,7 @@ const SectionTitle = ({ title, subtitle }: SectionTitleProps) => (
       {title}
     </h2>
     {subtitle && (
-      <p className="mt-2 text-gray-500 dark:text-white/50">{subtitle}</p>
+      <p className="mx-auto mt-3 max-w-2xl text-sm text-gray-500 dark:text-white/50 sm:text-base">{subtitle}</p>
     )}
   </div>
 );

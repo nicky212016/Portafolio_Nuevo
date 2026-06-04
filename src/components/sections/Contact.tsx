@@ -34,11 +34,11 @@ const Contact = () => {
   const { t } = useTranslation();
 
   return (
-    <section id="contacto" className="glass-card py-24">
+    <section id="contacto" className="py-24">
       <div className="mx-auto max-w-6xl px-4">
         <SectionTitle title={t("contact.title")} subtitle={t("contact.subtitle")} />
 
-        <div className="mx-auto max-w-xl">
+        <div className="section-panel mx-auto max-w-xl rounded-3xl p-6 sm:p-8">
           <a
             href={`mailto:${typedProfile.email}`}
             className="glass-card card-hover flex items-center justify-center gap-3 rounded-2xl p-5 text-lg font-medium text-gray-700 transition-all dark:text-white/70 dark:hover:text-primary-400"

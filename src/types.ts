@@ -9,6 +9,7 @@ export interface Profile {
   bio: Translatable;
   avatar: string;
   heroVideo: string;
+  cv: string;
 }
 
 export interface Project {

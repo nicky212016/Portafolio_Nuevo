@@ -22,17 +22,19 @@ const Skills = () => {
     <section id="habilidades" className="py-24">
       <div className="mx-auto max-w-6xl px-4">
         <SectionTitle title={t("skills.title")} subtitle={t("skills.subtitle")} />
-        <div className="mx-auto flex max-w-3xl flex-wrap justify-center gap-2">
-          {typedSkills.map((skill) => (
-            <span
-              key={skill.name}
-              className={`glass-card rounded-full border px-4 py-1.5 text-sm font-medium backdrop-blur-sm transition-all duration-300 hover:scale-105 ${
-                categoryColor[skill.category] || defaultColor
-              }`}
-            >
-              {skill.name}
-            </span>
-          ))}
+        <div className="section-panel mx-auto max-w-4xl rounded-3xl p-6 sm:p-8">
+          <div className="mx-auto flex max-w-3xl flex-wrap justify-center gap-2.5">
+            {typedSkills.map((skill) => (
+              <span
+                key={skill.name}
+                className={`glass-card rounded-full border px-4 py-1.5 text-sm font-medium backdrop-blur-sm transition-all duration-300 hover:scale-105 ${
+                  categoryColor[skill.category] || defaultColor
+                }`}
+              >
+                {skill.name}
+              </span>
+            ))}
+          </div>
         </div>
       </div>
     </section>
