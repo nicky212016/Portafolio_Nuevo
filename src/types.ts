@@ -16,6 +16,7 @@ export interface Project {
   id: string;
   title: Translatable;
   description: Translatable;
+  category: string;
   thumbnail: string;
   images: string[];
   videoUrl: string;

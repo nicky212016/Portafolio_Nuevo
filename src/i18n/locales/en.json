@@ -18,7 +18,14 @@
   },
   "projects": {
     "title": "Projects",
-    "subtitle": "Featured work"
+    "subtitle": "Featured work",
+    "categories": {
+      "3D": "3D Animation",
+      "Motion": "Motion Graphics",
+      "Video": "Video Editing",
+      "Design": "Design",
+      "Programming": "Programming"
+    }
   },
   "skills": {
     "title": "Skills",

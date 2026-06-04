@@ -1,7 +1,7 @@
-import { useState, useCallback, useRef } from "react";
+import { useState, useCallback, useRef, useMemo } from "react";
 import { useTranslation } from "react-i18next";
 import { motion, AnimatePresence } from "framer-motion";
-import { X } from "lucide-react";
+import { X, Box, Sparkles, Film, Palette, Code } from "lucide-react";
 import ReactPlayer from "react-player/lazy";
 import SectionTitle from "../ui/SectionTitle";
 import ProjectCard from "../ui/ProjectCard";
@@ -11,6 +11,16 @@ import { tData } from "../../utils/tData";
 import { useFocusTrap } from "../../hooks/useFocusTrap";
 
 const typedProjects = projects as Project[];
+
+const categoryOrder = ["3D", "Motion", "Video", "Design", "Programming"];
+
+const categoryIcons: Record<string, typeof Box> = {
+  "3D": Box,
+  Motion: Sparkles,
+  Video: Film,
+  Design: Palette,
+  Programming: Code,
+};
 
 const Projects = () => {
   const { t } = useTranslation();
@@ -22,17 +32,51 @@ const Projects = () => {
 
   useFocusTrap(modalRef, !!selected);
 
+  const groups = useMemo(() => {
+    const map = new Map<string, Project[]>();
+    for (const p of typedProjects) {
+      const cat = p.category || "Other";
+      if (!map.has(cat)) map.set(cat, []);
+      map.get(cat)!.push(p);
+    }
+    return categoryOrder
+      .filter((c) => map.has(c))
+      .map((c) => ({ category: c, projects: map.get(c)! }));
+  }, []);
+
   return (
     <section id="proyectos" className="py-24">
       <div className="mx-auto max-w-6xl px-4">
         <SectionTitle title={t("projects.title")} subtitle={t("projects.subtitle")} />
 
         <div className="section-panel rounded-3xl p-5 sm:p-8">
-          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {typedProjects.map((project) => (
-              <ProjectCard key={project.id} project={project} onSelect={open} />
-            ))}
-          </div>
+          {groups.map(({ category, projects: catProjects }) => {
+            const Icon = categoryIcons[category] || Box;
+            return (
+              <div key={category} className="mb-10 last:mb-0">
+                <div className="mb-5 flex items-center gap-2.5">
+                  <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-primary-500/15">
+                    <Icon size={16} className="text-primary-400" />
+                  </div>
+                  <h3 className="text-lg font-semibold tracking-tight text-white/80">
+                    {t(`projects.categories.${category}`)}
+                  </h3>
+                  <span className="text-xs text-white/30">
+                    ({catProjects.length})
+                  </span>
+                </div>
+                <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+                  {catProjects.map((project) => (
+                    <ProjectCard
+                      key={project.id}
+                      project={project}
+                      onSelect={open}
+                    />
+                  ))}
+                </div>
+              </div>
+            );
+          })}
         </div>
       </div>
 

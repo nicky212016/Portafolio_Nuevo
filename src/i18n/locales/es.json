@@ -18,7 +18,14 @@
   },
   "projects": {
     "title": "Proyectos",
-    "subtitle": "Trabajos realizados"
+    "subtitle": "Trabajos realizados",
+    "categories": {
+      "3D": "Animación 3D",
+      "Motion": "Motion Graphics",
+      "Video": "Edición de Video",
+      "Design": "Diseño",
+      "Programming": "Programación"
+    }
   },
   "skills": {
     "title": "Habilidades",
