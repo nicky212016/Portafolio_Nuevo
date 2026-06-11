@@ -38,7 +38,7 @@
     "images": [],
     "videoUrl": "https://youtu.be/9GY4PdX_6JQ",
     "modelUrl": "",
-    "tags": ["Blender", "3D Animation"],
+    "tags": ["Blender", "3D Animation", "Rigging", "Texturing", "Lighting"],
     "year": 2024
   },
   {
@@ -155,6 +155,90 @@
     "year": 2025
   },
   {
+    "id": "success-edit",
+    "title": {
+      "en": "Success Edit",
+      "es": "Success Edit"
+    },
+    "description": {
+      "en": "Video edit about success with motion graphics, transitions and rhythmic editing. Made in After Effects.",
+      "es": "Vídeo sobre el éxito con motion graphics, transiciones y edición rítmica. Realizado en After Effects."
+    },
+    "category": "Motion",
+    "thumbnail": "https://res.cloudinary.com/dfts1sxst/image/upload/f_auto,q_auto/SUCCESS_lhcore",
+    "images": [],
+    "videoUrl": "https://www.youtube.com/shorts/y9tOjB_lnIM",
+    "modelUrl": "",
+    "tags": ["After Effects", "Motion Graphics", "Video Editing", "Animation"],
+    "year": 2024
+  },
+  {
+    "id": "skills-edit",
+    "title": {
+      "en": "Skills Edit",
+      "es": "Skills Edit"
+    },
+    "description": {
+      "en": "Video edit about skills with motion graphics, transitions and rhythmic editing. Made in After Effects.",
+      "es": "Vídeo sobre las habilidades con motion graphics, transiciones y edición rítmica. Realizado en After Effects."
+    },
+    "category": "Motion",
+    "thumbnail": "https://res.cloudinary.com/dfts1sxst/image/upload/f_auto,q_auto/SKILLS_b8f9jn",
+    "images": [],
+    "videoUrl": "https://youtu.be/fGn0_so6OOA",
+    "modelUrl": "",
+    "tags": ["After Effects", "Motion Graphics", "Video Editing", "Animation"],
+    "year": 2024
+  },
+  {
+    "id": "fonse-solo",
+    "title": {
+      "en": "Solo Trip",
+      "es": "Viaje sólo"
+    },
+    "description": {
+      "en": "Reel for influencer @soyfonse about his solo trip to Europe with a total of 172.000 views.",
+      "es": "Edición para el influencer @soyfonse sobre su viaje en solitario por Europa con una repercusión de 172.000 visualizaciones."
+    },
+    "category": "Video",
+    "thumbnail": "https://res.cloudinary.com/dfts1sxst/image/upload/f_auto,q_auto/SOLO_om5aj0",
+    "images": [],
+    "videoUrl": "https://youtu.be/d0Dt-gQJ8LM",
+    "modelUrl": "",
+    "tags": [
+      "Adobe Premiere Pro",
+      "After Effects",
+      "Color Grading",
+      "Video Editing",
+      "Motion Graphics"
+    ],
+    "year": 2026
+  },
+  {
+    "id": "adidas",
+    "title": {
+      "en": "Adidas Headquarters",
+      "es": "Adidas Headquarters"
+    },
+    "description": {
+      "en": "Reel for influencer @soyfonse about his visit to the Adidas headquarters in Germany with a total of 78.000 views.",
+      "es": "Edición para el influencer @soyfonse sobre su visita a las oficinas de Adidas en Alemania con una repercusión de 78.000 visualizaciones."
+    },
+    "category": "Video",
+    "thumbnail": "https://res.cloudinary.com/dfts1sxst/image/upload/f_auto,q_auto/ADIDAS_fs5evi",
+    "images": [],
+    "videoUrl": "https://youtu.be/yAAd5pDunO0",
+    "modelUrl": "",
+    "tags": [
+      "Adobe Premiere Pro",
+      "After Effects",
+      "Color Grading",
+      "Video Editing",
+      "Motion Graphics"
+    ],
+    "year": 2026
+  },
+  {
     "id": "max-verstappen",
     "title": {
       "en": "Max Verstappen Edit",
@@ -189,12 +273,13 @@
       "es": "Pieza audiovisual sobre el Parque Natural Farallones, combinando edición de video, color grading y motion graphics para mostrar paisajes naturales."
     },
     "category": "Video",
-    "thumbnail": "https://picsum.photos/seed/farallones/640/360",
+    "thumbnail": "https://res.cloudinary.com/dfts1sxst/image/upload/f_auto,q_auto/FARALLONES_qvj68r",
     "images": [],
     "videoUrl": "https://youtu.be/jXex-WzdUdE",
     "modelUrl": "",
     "tags": [
       "Adobe Premiere Pro",
+      "After Effects",
       "Color Grading",
       "Video Editing",
       "Motion Graphics"
