@@ -10,12 +10,54 @@
       "es": "Proyecto de animación 3D con efectos visuales dinámicos y motion graphics para la marca Monster Energy."
     },
     "category": "3D",
-    "thumbnail": "https://picsum.photos/seed/monster-energy/640/360",
+    "thumbnail": "https://res.cloudinary.com/dfts1sxst/image/upload/f_auto,q_auto/Monster_revurv",
     "images": [],
     "videoUrl": "https://youtu.be/Uqu9ZYnnQw8",
     "modelUrl": "",
-    "tags": ["Blender", "After Effects", "3D Animation", "Motion Graphics"],
+    "tags": [
+      "Blender",
+      "Maya",
+      "After Effects",
+      "3D Animation",
+      "Motion Graphics"
+    ],
     "year": 2025
+  },
+  {
+    "id": "minion",
+    "title": {
+      "en": "Minions 3D Animation",
+      "es": "Animación 3D Minions"
+    },
+    "description": {
+      "en": "3D animation project using lighting, rigging, and modeling of the Minion character, with texturing, animation, and rendering.",
+      "es": "Proyecto de animación 3D con luces, rigging y modelado del personaje Minion, con texturizado, animación y renderizado."
+    },
+    "category": "3D",
+    "thumbnail": "https://res.cloudinary.com/dfts1sxst/image/upload/f_auto,q_auto/MINIONS_gow2gt",
+    "images": [],
+    "videoUrl": "https://youtu.be/9GY4PdX_6JQ",
+    "modelUrl": "",
+    "tags": ["Blender", "3D Animation"],
+    "year": 2024
+  },
+  {
+    "id": "drums-set",
+    "title": {
+      "en": "Drums Set",
+      "es": "Set de batería"
+    },
+    "description": {
+      "en": "3D modeling, texturing, and rendering of a drum set.",
+      "es": "Modelado 3D, texturizado y renderizado de un set de batería."
+    },
+    "category": "3D",
+    "thumbnail": "https://res.cloudinary.com/dfts1sxst/image/upload/f_auto,q_auto/Primer_Plano1_jooqnu",
+    "images": [],
+    "videoUrl": "https://youtu.be/LcsU8avAJi0",
+    "modelUrl": "",
+    "tags": ["Blender", "Adobe Substance"],
+    "year": 2024
   },
   {
     "id": "son-heung-min",
@@ -27,13 +69,114 @@
       "en": "Video editing and motion graphics piece featuring football player Son Heung Min, with dynamic transitions and visual effects.",
       "es": "Pieza de edición de video y motion graphics sobre el futbolista Son Heung Min, con transiciones dinámicas y efectos visuales."
     },
-    "category": "Video",
-    "thumbnail": "https://picsum.photos/seed/son-heung-min/640/360",
+    "category": "Motion",
+    "thumbnail": "https://res.cloudinary.com/dfts1sxst/image/upload/f_auto,q_auto/SON_xtwk1j",
     "images": [],
     "videoUrl": "https://youtu.be/Rsq3UINw63Y",
     "modelUrl": "",
-    "tags": ["After Effects", "Adobe Premiere Pro", "Video Editing", "Motion Graphics"],
+    "tags": [
+      "After Effects",
+      "Adobe Premiere Pro",
+      "Adobe Photoshop",
+      "Video Editing",
+      "Motion Graphics"
+    ],
     "year": 2025
+  },
+  {
+    "id": "cm-punk",
+    "title": {
+      "en": "CM Punk",
+      "es": "CM Punk"
+    },
+    "description": {
+      "en": "High-energy video edit featuring wrestler CM Punk, with rhythmic editing, motion graphics, and dramatic visual storytelling.",
+      "es": "Edición de video de alta energía sobre el luchador CM Punk, con edición rítmica, motion graphics y narrativa visual dramática."
+    },
+    "category": "Motion",
+    "thumbnail": "https://res.cloudinary.com/dfts1sxst/image/upload/f_auto,q_auto/PUNK_safm3w",
+    "images": [],
+    "videoUrl": "https://youtu.be/erkTwdOdXAg",
+    "modelUrl": "",
+    "tags": [
+      "After Effects",
+      "Adobe Premiere Pro",
+      "Adobe Illustrator",
+      "Video Editing",
+      "Motion Graphics"
+    ],
+    "year": 2025
+  },
+  {
+    "id": "redecorate",
+    "title": {
+      "en": "Redecorate",
+      "es": "Redecorate"
+    },
+    "description": {
+      "en": "Music-driven visual piece with synchronized motion graphics, rhythmic editing, and cinematic color treatment.",
+      "es": "Pieza visual con música sincronizada, motion graphics, edición rítmica y tratamiento cinematográfico de color."
+    },
+    "category": "Motion",
+    "thumbnail": "https://res.cloudinary.com/dfts1sxst/image/upload/f_auto,q_auto/REDECORATE_uxdvbv",
+    "images": [],
+    "videoUrl": "https://youtu.be/A9Rkl91Vvjo",
+    "modelUrl": "",
+    "tags": [
+      "After Effects",
+      "Adobe Premiere Pro",
+      "Adobe Illustrator",
+      "Motion Graphics"
+    ],
+    "year": 2025
+  },
+  {
+    "id": "portfolio-reel",
+    "title": {
+      "en": "Motion Graphics Portfolio",
+      "es": "Portafolio de Motion Graphics"
+    },
+    "description": {
+      "en": "Motion graphics portfolio reel showcasing animation, kinetic typography, and visual design work developed with After Effects.",
+      "es": "Reel de portafolio de motion graphics mostrando animación, tipografía cinética y diseño visual desarrollado con After Effects."
+    },
+    "category": "Motion",
+    "thumbnail": "https://res.cloudinary.com/dfts1sxst/image/upload/f_auto,q_auto/PORTAFOLIO_ufbhbb",
+    "images": [],
+    "videoUrl": "https://youtu.be/k68GMoTODfU",
+    "modelUrl": "",
+    "tags": [
+      "After Effects",
+      "Adobe Premiere Pro",
+      "Motion Graphics",
+      "Kinetic Typography",
+      "Animation"
+    ],
+    "year": 2025
+  },
+  {
+    "id": "max-verstappen",
+    "title": {
+      "en": "Max Verstappen Edit",
+      "es": "Max Verstappen Edit"
+    },
+    "description": {
+      "en": "Audiovisual piece about Max Verstappen, combining video editing, color grading, and motion graphics to showcase his career.",
+      "es": "Pieza audiovisual sobre Max Verstappen, combinando edición de video, color grading y motion graphics para mostrar su carrera."
+    },
+    "category": "Video",
+    "thumbnail": "https://res.cloudinary.com/dfts1sxst/image/upload/f_auto,q_auto/MAX_wanrxv",
+    "images": [],
+    "videoUrl": "https://youtu.be/qrjZwEV6p88",
+    "modelUrl": "",
+    "tags": [
+      "Adobe Premiere Pro",
+      "After Effects",
+      "Color Grading",
+      "Video Editing",
+      "Motion Graphics"
+    ],
+    "year": 2026
   },
   {
     "id": "parque-farallones",
@@ -50,169 +193,12 @@
     "images": [],
     "videoUrl": "https://youtu.be/jXex-WzdUdE",
     "modelUrl": "",
-    "tags": ["Adobe Premiere Pro", "Color Grading", "Video Editing", "Motion Graphics"],
-    "year": 2025
-  },
-  {
-    "id": "cm-punk",
-    "title": {
-      "en": "CM Punk — Final",
-      "es": "CM Punk — Final"
-    },
-    "description": {
-      "en": "High-energy video edit featuring wrestler CM Punk, with rhythmic editing, motion graphics, and dramatic visual storytelling.",
-      "es": "Edición de video de alta energía sobre el luchador CM Punk, con edición rítmica, motion graphics y narrativa visual dramática."
-    },
-    "category": "Video",
-    "thumbnail": "https://picsum.photos/seed/cm-punk/640/360",
-    "images": [],
-    "videoUrl": "https://youtu.be/erkTwdOdXAg",
-    "modelUrl": "",
-    "tags": ["After Effects", "Adobe Premiere Pro", "Video Editing", "Motion Graphics"],
-    "year": 2025
-  },
-  {
-    "id": "portfolio-reel",
-    "title": {
-      "en": "Motion Graphics Portfolio",
-      "es": "Portafolio de Motion Graphics"
-    },
-    "description": {
-      "en": "Motion graphics portfolio reel showcasing animation, kinetic typography, and visual design work developed with After Effects.",
-      "es": "Reel de portafolio de motion graphics mostrando animación, tipografía cinética y diseño visual desarrollado con After Effects."
-    },
-    "category": "Motion",
-    "thumbnail": "https://picsum.photos/seed/portfolio-reel/640/360",
-    "images": [],
-    "videoUrl": "https://youtu.be/k68GMoTODfU",
-    "modelUrl": "",
-    "tags": ["After Effects", "Motion Graphics", "Kinetic Typography", "Animation"],
-    "year": 2025
-  },
-  {
-    "id": "redecorate",
-    "title": {
-      "en": "Redecorate",
-      "es": "Redecorate"
-    },
-    "description": {
-      "en": "Music-driven visual piece with synchronized motion graphics, rhythmic editing, and cinematic color treatment.",
-      "es": "Pieza visual con música sincronizada, motion graphics, edición rítmica y tratamiento cinematográfico de color."
-    },
-    "category": "Motion",
-    "thumbnail": "https://picsum.photos/seed/redecorate/640/360",
-    "images": [],
-    "videoUrl": "https://youtu.be/A9Rkl91Vvjo",
-    "modelUrl": "",
-    "tags": ["After Effects", "Adobe Premiere Pro", "Color Grading", "Motion Graphics"],
-    "year": 2025
-  },
-  {
-    "id": "mock-3d-1",
-    "title": {
-      "en": "[Mock] 3D Product Visualization",
-      "es": "[Mock] Visualización 3D de Producto"
-    },
-    "description": {
-      "en": "[MOCK] 3D product visualization showcasing realistic materials, lighting, and camera animation.",
-      "es": "[MOCK] Visualización 3D de producto mostrando materiales realistas, iluminación y animación de cámara."
-    },
-    "category": "3D",
-    "thumbnail": "https://picsum.photos/seed/mock-3d-1/640/360",
-    "images": [],
-    "videoUrl": "",
-    "modelUrl": "",
-    "tags": ["Blender", "3D Modeling", "Texturing", "Lighting"],
-    "year": 2025
-  },
-  {
-    "id": "mock-3d-2",
-    "title": {
-      "en": "[Mock] Character Rigging Demo",
-      "es": "[Mock] Demo de Rigging de Personaje"
-    },
-    "description": {
-      "en": "[MOCK] Character rigging and animation demonstration using advanced armature and weight painting techniques.",
-      "es": "[MOCK] Demostración de rigging y animación de personajes usando técnicas avanzadas de armadura y weight painting."
-    },
-    "category": "3D",
-    "thumbnail": "https://picsum.photos/seed/mock-3d-2/640/360",
-    "images": [],
-    "videoUrl": "",
-    "modelUrl": "",
-    "tags": ["Blender", "Rigging", "Character Animation", "Weight Painting"],
-    "year": 2025
-  },
-  {
-    "id": "mock-3d-3",
-    "title": {
-      "en": "[Mock] Architectural Visualization",
-      "es": "[Mock] Visualización Arquitectónica"
-    },
-    "description": {
-      "en": "[MOCK] Architectural visualization project featuring interior and exterior renders with photorealistic quality.",
-      "es": "[MOCK] Proyecto de visualización arquitectónica con renders interiores y exteriores de calidad fotorrealista."
-    },
-    "category": "3D",
-    "thumbnail": "https://picsum.photos/seed/mock-3d-3/640/360",
-    "images": [],
-    "videoUrl": "",
-    "modelUrl": "",
-    "tags": ["Blender", "Archviz", "Lighting", "Texturing"],
-    "year": 2025
-  },
-  {
-    "id": "mock-motion-1",
-    "title": {
-      "en": "[Mock] Kinetic Typography Showreel",
-      "es": "[Mock] Showreel de Tipografía Cinética"
-    },
-    "description": {
-      "en": "[MOCK] Kinetic typography showreel exploring dynamic text animations, timing, and visual rhythm.",
-      "es": "[MOCK] Showreel de tipografía cinética explorando animaciones de texto dinámicas, timing y ritmo visual."
-    },
-    "category": "Motion",
-    "thumbnail": "https://picsum.photos/seed/mock-motion-1/640/360",
-    "images": [],
-    "videoUrl": "",
-    "modelUrl": "",
-    "tags": ["After Effects", "Kinetic Typography", "Motion Graphics", "Animation"],
-    "year": 2025
-  },
-  {
-    "id": "mock-motion-2",
-    "title": {
-      "en": "[Mock] Logo Animation Pack",
-      "es": "[Mock] Pack de Animación de Logos"
-    },
-    "description": {
-      "en": "[MOCK] Collection of logo animations for various brands, exploring different styles and motion design approaches.",
-      "es": "[MOCK] Colección de animaciones de logotipos para varias marcas, explorando diferentes estilos y enfoques de diseño de movimiento."
-    },
-    "category": "Motion",
-    "thumbnail": "https://picsum.photos/seed/mock-motion-2/640/360",
-    "images": [],
-    "videoUrl": "",
-    "modelUrl": "",
-    "tags": ["After Effects", "Logo Animation", "Motion Design", "Illustrator"],
-    "year": 2025
-  },
-  {
-    "id": "mock-video-1",
-    "title": {
-      "en": "[Mock] Documentary Short Film",
-      "es": "[Mock] Cortometraje Documental"
-    },
-    "description": {
-      "en": "[MOCK] Short documentary film exploring urban stories, edited with Premiere Pro and color graded in DaVinci Resolve.",
-      "es": "[MOCK] Cortometraje documental explorando historias urbanas, editado con Premiere Pro y colorizado en DaVinci Resolve."
-    },
-    "category": "Video",
-    "thumbnail": "https://picsum.photos/seed/mock-video-1/640/360",
-    "images": [],
-    "videoUrl": "",
-    "modelUrl": "",
-    "tags": ["Adobe Premiere Pro", "DaVinci Resolve", "Color Grading", "Documentary"],
-    "year": 2025
+    "tags": [
+      "Adobe Premiere Pro",
+      "Color Grading",
+      "Video Editing",
+      "Motion Graphics"
+    ],
+    "year": 2023
   }
 ]
