@@ -19,6 +19,7 @@
   "projects": {
     "title": "Proyectos",
     "subtitle": "Trabajos realizados",
+    "close": "Cerrar",
     "showMore": "Mostrar {{count}} más",
     "showLess": "Mostrar menos",
     "categories": {

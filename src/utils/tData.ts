@@ -4,5 +4,5 @@ export type Translatable = string | Record<string, string>;
 
 export const tData = (value: Translatable): string => {
   if (typeof value === "string") return value;
-  return value[i18next.language] || value.en || "";
+  return value[i18next.resolvedLanguage] || value.en || "";
 };

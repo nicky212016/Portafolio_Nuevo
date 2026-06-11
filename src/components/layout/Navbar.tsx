@@ -1,4 +1,4 @@
-import { useState, memo, useCallback, useEffect } from "react";
+import { useState, useCallback, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, Languages } from "lucide-react";
@@ -32,7 +32,7 @@ const Navbar = () => {
   }, []);
 
   const toggleLang = useCallback(() => {
-    const next = i18next.language === "en" ? "es" : "en";
+    const next = i18next.resolvedLanguage === "en" ? "es" : "en";
     i18next.changeLanguage(next);
   }, []);
 
@@ -64,7 +64,7 @@ const Navbar = () => {
               aria-label="Cambiar idioma"
             >
               <Languages size={14} />
-              {i18next.language === "en" ? "ES" : "EN"}
+              {i18next.resolvedLanguage === "en" ? "ES" : "EN"}
             </button>
           </div>
         </div>
@@ -76,7 +76,7 @@ const Navbar = () => {
             aria-label="Cambiar idioma"
           >
             <Languages size={14} />
-            {i18next.language === "en" ? "ES" : "EN"}
+            {i18next.resolvedLanguage === "en" ? "ES" : "EN"}
           </button>
           <button
             onClick={toggleMenu}
@@ -116,4 +116,4 @@ const Navbar = () => {
   );
 };
 
-export default memo(Navbar);
+export default Navbar;
