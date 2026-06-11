@@ -1,4 +1,5 @@
-import { memo, useCallback, useState } from "react";
+import { useCallback, useState } from "react";
+import { useTranslation } from "react-i18next";
 import { Play, Image as ImageIcon } from "lucide-react";
 import type { Project } from "../../types";
 import { tData } from "../../utils/tData";
@@ -9,6 +10,7 @@ interface ProjectCardProps {
 }
 
 const ProjectCard = ({ project, onSelect }: ProjectCardProps) => {
+  const { t: _t } = useTranslation();
   const handleClick = useCallback(() => onSelect(project), [project, onSelect]);
   const [imgError, setImgError] = useState(false);
 
@@ -69,4 +71,4 @@ const ProjectCard = ({ project, onSelect }: ProjectCardProps) => {
   );
 };
 
-export default memo(ProjectCard);
+export default ProjectCard;

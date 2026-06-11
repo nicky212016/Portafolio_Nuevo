@@ -125,7 +125,7 @@ const Projects = () => {
               ref={modalRef}
               role="dialog"
               aria-modal="true"
-              aria-label={tData(selected.title)}
+                aria-label={tData(selected.title)}
               className="max-h-[90vh] w-full max-w-3xl overflow-y-auto rounded-2xl bg-white shadow-2xl dark:bg-dark-card"
             >
               <div className="relative aspect-video bg-gray-100 dark:bg-dark-bg">
@@ -159,6 +159,7 @@ const Projects = () => {
                   </div>
                   <button
                     onClick={close}
+                    aria-label={t("projects.close")}
                     className="rounded-full p-2 text-gray-400 transition-colors hover:bg-gray-100 dark:hover:bg-dark-bg"
                   >
                     <X size={20} />

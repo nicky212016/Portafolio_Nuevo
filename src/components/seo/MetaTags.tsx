@@ -1,4 +1,5 @@
-import { memo, useEffect } from "react";
+import { useEffect } from "react";
+import { useTranslation } from "react-i18next";
 import { Helmet } from "react-helmet-async";
 import i18next from "i18next";
 import profile from "../../data/profile.json";
@@ -8,9 +9,10 @@ import { tData } from "../../utils/tData";
 const typedProfile = profile as unknown as Profile;
 
 const MetaTags = () => {
+  useTranslation();
 
   useEffect(() => {
-    document.documentElement.lang = i18next.language;
+    document.documentElement.lang = i18next.resolvedLanguage ?? "en";
   }, []);
 
   useEffect(() => {
@@ -30,7 +32,7 @@ const MetaTags = () => {
 
   return (
     <Helmet>
-      <html lang={i18next.language} />
+      <html lang={i18next.resolvedLanguage ?? "en"} />
       <title>{title}</title>
       <meta name="description" content={description} />
 
@@ -50,4 +52,4 @@ const MetaTags = () => {
   );
 };
 
-export default memo(MetaTags);
+export default MetaTags;
