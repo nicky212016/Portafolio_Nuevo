@@ -2,7 +2,6 @@
   "name": "portafolio-multimedia",
   "private": true,
   "version": "1.0.0",
-  "packageManager": "pnpm@10.34.1",
   "type": "module",
   "scripts": {
     "dev": "vite",
