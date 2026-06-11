@@ -10,10 +10,11 @@ const typedSkills = skills as Skill[];
 
 const categoryColor: Record<string, string> = {
   Motion: "text-primary-500 border-primary-500/30",
-  Video: "text-primary-400 border-primary-400/30",
-  Design: "text-primary-600 border-primary-600/30",
+  Video: "text-primary-500 border-primary-500/30",
+  Design: "text-primary-500 border-primary-500/30",
   "3D": "text-primary-700 border-primary-700/30",
   Programming: "text-primary-500 border-primary-500/30",
+  Audio: "text-primary-400 border-primary-400/30",
 };
 
 const defaultColor = "text-gray-500 border-gray-500/30";
